@@ -18,13 +18,17 @@ Take the **Kula ring** of the Trobriand Islands as example, **a ceremonial excha
 
 
 The system only functions because participants trust that gifts given today will be reciprocated months or years hence. What the Kula ring demonstrates is that loyalty and trust are not instantaneous - they are accumulated through repeated cycles, weighted by time. A trading partner who has participated faithfully for decades carries far more social capital of one that hasn't. The system inherently recognises that time, levity and history matter and yet, many would argue "trust" cannot be quantified.
+
 $$
 S = \sum_{i=1}^{n} M_i \tag{1}
 $$
+
 If we are to identify the core pillars of what constitutes ***trust ($T$)*** it would equate to: ***magnitude ($M$)*** the positive or negative social impact an interaction has on a recipient, ***interactions ($n$)***  the total number of trust-affecting events since acquaintance, and ***time ($t$)***  the duration since acquaintance. Using algebraic arithmetic, this gives us the equation: 
+
 $$
 T =  S t
 $$
+
 Let's apply these formulas to a grounded relatable physical context to see how we can model trust.
 
 ###### Scenario: The New Friend

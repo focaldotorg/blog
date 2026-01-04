@@ -1,9 +1,9 @@
-title: governanceandtea.xyz
-domain: governanceandtea.xyz
-url: https://governanceandtea.xyz
+title: focal
+domain: focal.org
+url: https://focal.org
 baseurl: ""
 author:
-  name: xGozzy
+  name: focaldotorg
 description: null
 
 show_excerpts: false # set to true to show excerpts on the homepage
@@ -12,6 +12,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  skin: classic
 
   # generate social links in footer
     # devto: jekyll
@@ -49,6 +50,12 @@ minima:
 # - about.md
 
 # Build settings
+
+
+markdown: kramdown
+
+kramdown:
+  math_engine: mathjax
 
 plugins:
  - jekyll-feed
