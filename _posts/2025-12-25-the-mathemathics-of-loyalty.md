@@ -1,21 +1,18 @@
 ---
 layout: post
+author: "Samuel J. Gosling"
 title: "The Mathemathics of Loyalty"
 image: /assets/img/kula-ring-map.jpg
 permalink: the-mathemathics-of-loyalty
-description: "Reciprocity, capital markets and stakeholder governance"
+description: "Reciprocity, capital markets and shareholder governance"
 date: "25/12/2025"
 ---
 
-## *Samuel J. Gosling*
-
 Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reocurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call **trust** between parties of any relationship, which function constructively through reciprocity. 
-
-Take the **Kula ring** of the Trobriand Islands as example, **a ceremonial exchange system** where shell necklaces (soulava) travel clockwise and shell armbands (mwali) move counterclockwise through an archipelago of island communities in the Solomon sea. The objects themselves hold little utilitarian value; their worth lies entirely in the relationships they represent. A chief who receives a soulava is expected to reciprocate with a mwali - not immediately, but eventually. The delay is crucial. It creates obligation, builds anticipation, and tests commitment over time. 
-
 
 ![The Kula ring](/assets/img/kula-ring-map.jpg)
 
+Take the **Kula ring** of the Trobriand Islands as example, **a ceremonial exchange system** where shell necklaces (soulava) travel clockwise and shell armbands (mwali) move counterclockwise through an archipelago of island communities in the Solomon sea. The objects themselves hold little utilitarian value; their worth lies entirely in the relationships they represent. A chief who receives a soulava is expected to reciprocate with a mwali - not immediately, but eventually. The delay is crucial. It creates obligation, builds anticipation, and tests commitment over time. 
 
 The system only functions because participants trust that gifts given today will be reciprocated months or years hence. What the Kula ring demonstrates is that loyalty and trust are not instantaneous - they are accumulated through repeated cycles, weighted by time. A trading partner who has participated faithfully for decades carries far more social capital of one that hasn't. The system inherently recognises that time, levity and history matter and yet, many would argue "trust" cannot be quantified.
 
