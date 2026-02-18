@@ -32,7 +32,11 @@
 .post-list li {
   border: solid 2.5px #999999;
   border-radius: 0px;
-  padding: 20px 30px;
+  padding: 30px 20px;
+}
+
+.post-list li a {
+  margin-block-start: 0px;
 }
 
 .post-list li a:hover {
