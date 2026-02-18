@@ -1,11 +1,11 @@
 ---
 layout: post
 author: "Samuel J. Gosling"
-title: "The Mathemathics of Loyalty"
+title: "The Mathematics of Loyalty"
 image: /assets/img/kula-ring-map.jpg
 permalink: the-mathemathics-of-loyalty
 description: "Reciprocity, capital markets and governance"
-date: "25/12/2025"
+date: "25/01/2026"
 ---
 
 Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call **trust** between parties of any relationship, which function constructively through reciprocity. 

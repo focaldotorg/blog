@@ -6,9 +6,6 @@
   "minima/skins/classic",
   "minima/initialize";
 
-
-
-
 .wrapper {
   max-width: calc(650px - (30px))
 }
@@ -19,15 +16,21 @@
 
 .site-header {
   border-top: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #999999;
+}
+
+.site-footer {
+  border-top: 3px solid #999999;
 }
 
 .post-list {
-  margin-top: 15px;
+  margin-top: 50px;
 }
 
 .post-list li {
-  border: solid 2px $brand-color;
-  border-radius: 5px;
+  border: solid 2.5px #999999;
+  border-radius: 0px;
   padding: 12.5px 22.5px;
 }
 
@@ -38,7 +41,7 @@
 
 .post-description {
   text-decoration: none;
-  color: $border-color-01;
+  color: grey;
 }
 
 .post-list li:hover {
@@ -47,7 +50,7 @@
 
 .post-list li a h2 {
   margin-bottom: 3px;
-  color: $border-color-01;
+  color: black;
 }
 
 .post-list li:hover {
