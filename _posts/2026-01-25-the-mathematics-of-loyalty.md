@@ -28,7 +28,7 @@ $$
 
 Let's apply these formulas to a grounded physical context to see how we can model trust.
 
-#### Scenario: The New Friend
+------
 
 A friend you have known for 2 months which you have had 5 positive interactions so far (meeting, hanging out, they lent you money, etc) with varying positive magnitudes of $M = 6, 6, 8, 5, 7$. Time is treated as a ratio of annuity.
 
