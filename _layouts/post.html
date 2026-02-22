@@ -35,4 +35,16 @@ layout: default
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  <script>
+    document.querySelectorAll('img[title]').forEach(img => {
+      const figure = document.createElement('figure');
+      const caption = document.createElement('figcaption');
+
+      caption.textContent = img.title;
+      img.parentNode.insertBefore(figure, img);
+      figure.appendChild(img);
+      figure.appendChild(caption);
+    });
+  </script>
 </article>

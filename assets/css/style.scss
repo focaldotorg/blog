@@ -69,6 +69,8 @@
 .post-image,
 .post img {
   width: 100%;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .idiom {
@@ -92,4 +94,11 @@ table {
 
 td {
   font-size: 12px
+}
+
+figcaption {
+  margin-top: 12px;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.95em;
 }

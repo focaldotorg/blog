@@ -9,7 +9,7 @@ date: "25/01/2026"
 
 Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call **trust** between parties of any relationship, which function constructively through reciprocity. 
 
-![Map of the Kula ring](assets/img/kula-ring-map.jpg)
+![Map of the Kula ring](assets/img/kula-ring-map.jpg "Map of the Kula ring")
 
 Take the **Kula ring** of the Trobriand Islands as example, **a ceremonial exchange system** where shell necklaces (Soulava) travel clockwise and shell armbands (Mwali) move counterclockwise through an archipelago of island communities in the Solomon sea. The objects themselves hold little utilitarian value; their worth lies entirely in the relationships they represent. A chief who receives a Soulava is expected to reciprocate with a Mwali - not immediately, but eventually. The delay is crucial. It creates obligation, builds anticipation, and tests commitment over time. 
 
@@ -60,7 +60,7 @@ The defects of plutocracy trickle down even to aspects such as remuneration, org
 
 Many dismiss the roots of which voting theory was formalised and applied in societal politics, yet its an important angle that helps understand the flaws of weighted voting and dynamics of collective decision-making when choreographed incorrectly. In 1946, [Lionel Penrose](https://en.wikipedia.org/wiki/Lionel_Penrose) proposed a new method for voting demoted as the square-root method, unfortunately to not much reception although its inception marked a turning point; **saturating concentrations in power but respecting broad representation**. It wasn't until 1954 when Penrose's theory would be validated further, when the Noble prize winner [Lloyd Shapley](https://en.wikipedia.org/wiki/Lloyd_Shapley) and [Martin Shubik](https://en.wikipedia.org/wiki/Martin_Shubik) theorised a metric to quantify the influence of voting power through combinatorial and probabilistic methods. Known as the **Shapley-Shubik index** it changed how we can understanding voting power and influence in any governing system, its first real thought-provoking application was an analysis regarding the UN security council, Shapley and Shubik showed how the US veto clause effectively disenfranchised all members states.
 
-![New York Times 1991 Nassau County Board Lawsuit](assets/img/nyt-1991-nassau-county.jpg)
+![New York Times 1991 Nassau County Board Lawsuit](assets/img/nyt-1991-nassau-county.jpg "New York Times 1991 Nassau County Board Lawsuit")
 
 In what is now a clearly a pivotal point in time when it comes to game theory and politics, consumer advocate [John F. Banzhaf III](https://en.wikipedia.org/wiki/John_Banzhaf) was inspired by the work of Lloyd and co, upon realising the skew of power when it came to Nassau county board governance. Instead of accusations, John used cold cut mathematics through devising his own power index to prove the disparity in representation of member townships due to weighted vote scoring. This followed by perusing legal action against the board, which in 1991 was deemed successful enacting remodeling of the county's governance to a more democratic and egalitarian one-member one-vote model.
 
