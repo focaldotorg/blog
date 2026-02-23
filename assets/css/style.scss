@@ -14,6 +14,11 @@
   height: 30px;
 }
 
+.post-header {
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
 .site-header {
   border-top: none;
   padding-bottom: 5px;
@@ -86,6 +91,10 @@
   margin-top: 5px;
 }
 
+.post-content {
+  margin-bottom: 100px;
+}
+
 table {
   margin-left: auto;
   margin-right: auto;
@@ -102,3 +111,79 @@ figcaption {
   font-style: italic;
   font-size: 0.95em;
 }
+
+.post-content h2, .post-content h3 {
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.toc {
+  position: absolute;
+  top: 0;
+  left: calc(10% - 280px);
+  height: 100%;
+  width: 260px;
+  font-size: 0.85em;
+  overflow: hidden;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc ul::before {
+  content: '';
+  position: absolute;
+  left: 30%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #999999;
+}
+
+.toc li {
+  position: relative;
+  padding-left: calc(30% + 22px);
+}
+
+.toc a {
+  text-decoration: none;
+  color: #cdcdcd;
+  display: block;
+  padding: 4px 0;
+}
+
+.toc a.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.toc li::before {
+  content: '—';
+  position: absolute;
+  left: 69px;
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+  transform: none;
+  top: 4px;
+  color: #999;
+}
+
+.toc li.active::before {
+  color: #000;
+}
+
+.post-wrapper {
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .toc { display: none; }
+  .post-content h2, .post-content h3 { opacity: 0; display:none; }
+}
+

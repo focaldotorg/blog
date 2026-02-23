@@ -7,6 +7,8 @@ description: "Reciprocity, capital markets and governance"
 date: "25/01/2026"
 ---
 
+## Kula ring
+
 Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call **trust** between parties of any relationship, which function constructively through reciprocity. 
 
 ![Map of the Kula ring](assets/img/kula-ring-map.jpg "Map of the Kula ring")
@@ -27,7 +29,7 @@ $$
 
 Let's apply these formulas to a grounded physical context to see how we can model trust.
 
-------
+## Real life trust
 
 A friend you have known for 2 months which you have had 5 positive interactions so far (meeting, hanging out, they lent you money, etc) with varying positive magnitudes of $M = 6, 6, 8, 5, 7$. Time is treated as a ratio of annuity.
 
@@ -48,7 +50,7 @@ Now they ask you for a loan, you comply and you lend them the money, resulting i
 
 The **trust more than doubles (119% increase)** as the relationship is young with modest accumulated trust, this significant positive action has a meaningful but proportionate impact. The friendship is strengthened substantially, establishing a foundation for future interactions.
 
-------
+## Corperate governance
 
 Consider corporate governance: when shareholders vote on company decisions, they are exercising power over an entity built through years of collective effort, customer relationships, and operational history. Yet our current system treats all votes identical regardless of whether the shareholder bought yesterday or has held for decades. A hedge fund that purchased shares last week has the same voting power per share as a pension fund that has held for twenty years - despite having radically different exposure profiles to their financial decisions. This is the mathematical flaw at the heart of **plutocracy** - it ignores time. *In our trust equations, a system that only considers magnitude ($M$) and current holdings while disregarding time ($t$) and trust ($T$) will systematically favor actors with low $T$ - those with minimal stake in long-term outcomes. *When a short-term investor votes to maximise quarterly earnings through layoffs or asset sales, they capture the benefits ($ΔT_{+}$ for themselves) while long-term stakeholders - employees, customers, benefactors and patient investors absorb the loss.
 
@@ -58,6 +60,8 @@ The defects of plutocracy trickle down even to aspects such as remuneration, org
 
 *Prior attempts in this domain simply leave time-weighting unbounded and uncompetitive, **simplying introducing the factor of time itself is not enough**. This approach creates what we call "entrenchment" where if time-weight is purely linear, the competitive gap is zero because of first mover advantage. Like human relationships as modeled in equation (1), shareholders should be given a degree of authority from simply being present and allocating their stake towards a dedicated function, as they already do through idle inventory, although that is where it is troublesome to treat public markets and governance asset demographics equally. The latter being when shares or votes are committed towards the organisation's function, the former for provisioning shares for an economic incentive. **One of the major defects of plutocracy is the ambiguity of voting power**, simply due to the accessibility and continuous market liquidity.
 
+## History of voting theory
+
 Many dismiss the roots of which voting theory was formalised and applied in societal politics, yet its an important angle that helps understand the flaws of weighted voting and dynamics of collective decision-making when choreographed incorrectly. In 1946, [Lionel Penrose](https://en.wikipedia.org/wiki/Lionel_Penrose) proposed a new method for voting demoted as the square-root method, unfortunately to not much reception although its inception marked a turning point; **saturating concentrations in power but respecting broad representation**. It wasn't until 1954 when Penrose's theory would be validated further, when the Noble prize winner [Lloyd Shapley](https://en.wikipedia.org/wiki/Lloyd_Shapley) and [Martin Shubik](https://en.wikipedia.org/wiki/Martin_Shubik) theorised a metric to quantify the influence of voting power through combinatorial and probabilistic methods. Known as the **Shapley-Shubik index** it changed how we can understanding voting power and influence in any governing system, its first real thought-provoking application was an analysis regarding the UN security council, Shapley and Shubik showed how the US veto clause effectively disenfranchised all members states.
 
 ![New York Times 1991 Nassau County Board Lawsuit](assets/img/nyt-1991-nassau-county.jpg "New York Times 1991 Nassau County Board Lawsuit")
@@ -66,7 +70,7 @@ In what is now a clearly a pivotal point in time when it comes to game theory an
 
 Fast forward to the 21st century and there has been a re-ignition in preferential voting inspired from the foundations of the square-root method **proposed by Penrose, validated by Shapley and applied by Banzhaf** but more ostensibly derived from the mechanism design work of the "point-purchase" system in 1979 by [Hylland](https://en.wikipedia.org/wiki/Aanund_Hylland) and [Zeckhauser](https://en.wikipedia.org/wiki/Richard_Zeckhauser) and the optimal voting rules proposed [Ledyard](https://en.wikipedia.org/wiki/John_Ledyard_(economist)) and [Palfrey](https://en.wikipedia.org/wiki/Thomas_Palfrey) in 1994. Quadratic Voting (QV) proposed by [Weyl](https://en.wikipedia.org/wiki/Glen_Weyl) and [Posner](https://en.wikipedia.org/wiki/Eric_Posner) in 2017, uses the square-root for multi-balloted voting systems, where the cost increases "quadratically" relative to the sum of ballot options. Its only flaw is the need for Sybil protection as it ultimately fails from the exponential advantage to what is called as a "splitting attack". Much is the reason to why it has failed to be integral to capital markets and has shown more function in democratic settings. Such as in the case of Taiwan's digital ministry running pilots for budget ballots in 2018 further validating the benefits of the square root method in voting theory.
 
-----------
+## Polycentric voting
 
 Looking back at Kula ring and comparing it to modern corporate governance, the ancient exchange system had multiple degrees of autonomy such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements and bipartisan issues), whereas shareholder governance only has capital to equate power. In 1951 [Micheal Polanyi](https://en.wikipedia.org/wiki/Michael_Polanyi) philosophised the thesis of **polycentrism**; which is defined as cooperative bodies with multiple nodes or groups of authority. On the contrary to **monocentrism**, where there is only one. Plutocracy gives the impression that it is polycentric but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and therefore usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, **no single actor has complete control or can shift the dynamics of the system alone**.
 

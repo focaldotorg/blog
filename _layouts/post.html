@@ -26,8 +26,13 @@ layout: default
       {%- endif -%}</p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+  <div class="post-wrapper">
+    <nav class="toc">
+      <ul id="toc-list"></ul>
+    </nav>
+    <div class="post-content e-content" itemprop="articleBody">
+      {{ content }}
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}
@@ -45,6 +50,56 @@ layout: default
       img.parentNode.insertBefore(figure, img);
       figure.appendChild(img);
       figure.appendChild(caption);
+    })
+
+    window.addEventListener('load', () => {
+      if (window.innerWidth > 1024) {
+        const headings = document.querySelectorAll('.post-content h2, .post-content h3');
+        const tocList = document.getElementById('toc-list');
+        const postContent = document.querySelector('.post-content');
+        const postTop = postContent.offsetTop;
+        const toc = document.querySelector('.toc');
+        const wrapper = document.querySelector('.post-wrapper');
+        const postHeight = wrapper.offsetHeight;
+
+        toc.style.height = `${postHeight}px`;
+        tocList.style.height = `${postHeight}px`;
+
+        headings.forEach(heading => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+
+          a.href = `#${heading.id}`;
+          a.textContent = heading.textContent;
+
+          if (heading.tagName === 'H3') li.classList.add('sub');
+          const relativePos = (heading.offsetTop - postTop) / postHeight * 100;
+
+          li.style.position = 'absolute';
+          li.style.top = `${Math.max(0, relativePos)}%`;
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+
+        tocList.style.position = 'relative';
+
+        window.addEventListener('scroll', () => {
+          headings.forEach(heading => {
+            const top = heading.getBoundingClientRect().top;
+
+            if (top < 500) {
+              document.querySelectorAll('.toc a').forEach(a => a.classList.remove('active'));
+              document.querySelectorAll('.toc li').forEach(li => li.classList.remove('active'));
+              const activeLink = document.querySelector(`.toc a[href="#${heading.id}"]`);
+
+              if (activeLink) {
+                activeLink.classList.add('active');
+                activeLink.parentElement.classList.add('active');
+              }
+            }
+          });
+        });
+      }
     });
   </script>
 </article>
