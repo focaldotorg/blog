@@ -10,6 +10,14 @@
   max-width: calc(650px - (30px))
 }
 
+.trigger {
+  background: white;
+}
+
+.footer-col {
+  text-align: left;
+}
+
 .site-logo {
   height: 30px;
 }
@@ -51,7 +59,7 @@
 
 .post-description {
   text-decoration: none;
-  color: grey;
+  color: black;
 }
 
 .post-list li:hover {
@@ -146,7 +154,7 @@ figcaption {
 
 .toc li {
   position: relative;
-  padding-left: calc(30% + 22px);
+  padding-left: calc(30% + 20px);
 }
 
 .toc a {
@@ -183,7 +191,21 @@ figcaption {
 }
 
 @media (max-width: 1024px) {
-  .toc { display: none; }
-  .post-content h2, .post-content h3 { opacity: 0; display:none; }
+  
+  .toc { 
+    display: none; 
+  }
+  
+  .post-content h2, .post-content h3 { 
+    opacity: 0; 
+    display:none; 
+  }
+  
+  .site-nav { 
+    background: none;
+    border: 2.5px solid #999999;
+    border-radius: 0px;
+  }
+
 }
 
