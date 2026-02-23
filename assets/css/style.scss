@@ -100,7 +100,7 @@
 }
 
 .post-content {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 table {
@@ -148,7 +148,7 @@ figcaption {
   left: 30%;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 2.5px;
   background: #cdcdcd;
 }
 
@@ -200,12 +200,15 @@ figcaption {
     opacity: 0; 
     display:none; 
   }
-  
-  .site-nav { 
+
+}
+
+@media (max-width: 624px) {
+
+  .site-nav {
     background: none;
     border: 2.5px solid #999999;
     border-radius: 0px;
   }
 
 }
-

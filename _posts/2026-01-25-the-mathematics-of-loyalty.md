@@ -70,18 +70,25 @@ Many dismiss the roots of which voting theory was formalised and applied in soci
 
 In what is now a clearly a pivotal point in time when it comes to game theory and politics, consumer advocate [John F. Banzhaf III](https://en.wikipedia.org/wiki/John_Banzhaf) was inspired by the work of Lloyd and co, upon realising the skew of power when it came to Nassau county board governance. Instead of accusations, John used cold cut mathematics through devising his own power index to prove the disparity in representation of member townships due to weighted vote scoring. This followed by perusing legal action against the board, which in 1991 was deemed successful enacting remodeling of the county's governance to a more democratic and egalitarian one-member one-vote model.
 
-Fast forward to the 21st century and there has been a re-ignition in preferential voting inspired from the foundations of the square-root method **proposed by Penrose, validated by Shapley and applied by Banzhaf** but more ostensibly derived from the mechanism design work of the "point-purchase" system in 1979 by [Hylland](https://en.wikipedia.org/wiki/Aanund_Hylland) and [Zeckhauser](https://en.wikipedia.org/wiki/Richard_Zeckhauser) and the optimal voting rules proposed [Ledyard](https://en.wikipedia.org/wiki/John_Ledyard_(economist)) and [Palfrey](https://en.wikipedia.org/wiki/Thomas_Palfrey) in 1994. Quadratic Voting (QV) proposed by [Weyl](https://en.wikipedia.org/wiki/Glen_Weyl) and [Posner](https://en.wikipedia.org/wiki/Eric_Posner) in 2017, uses the square-root for multi-balloted voting systems, where the cost increases "quadratically" relative to the sum of ballot options. Its only flaw is the need for Sybil protection as it ultimately fails from the exponential advantage to what is called as a "splitting attack". Much is the reason to why it has failed to be integral to capital markets and has shown more function in democratic settings. Such as in the case of Taiwan's digital ministry running pilots for budget ballots in 2018 further validating the benefits of the square root method in voting theory.
+Fast forward to the 21st century and there has been a re-ignition in preferential voting inspired from the foundations of the square-root method **proposed by Penrose, validated by Shapley and applied by Banzhaf** but more ostensibly derived from the mechanism design work of the "point-purchase" system in 1979 by [Hylland](https://en.wikipedia.org/wiki/Aanund_Hylland) and [Zeckhauser](https://en.wikipedia.org/wiki/Richard_Zeckhauser) and the optimal voting rules proposed [Ledyard](https://en.wikipedia.org/wiki/John_Ledyard_(economist)) and [Palfrey](https://en.wikipedia.org/wiki/Thomas_Palfrey) in 1994. Quadratic Voting (QV) proposed by [Weyl](https://en.wikipedia.org/wiki/Glen_Weyl) and [Posner](https://en.wikipedia.org/wiki/Eric_Posner) in 2017, uses the square-root function to replicate a "quadratic" cost in multi-balloted voting systems. Its only flaw is the need for Sybil protection as it ultimately fails from the exponential advantage to what is called as a "splitting attack". Much is the reason to why it has failed to be integral to capital markets and has shown more function in democratic settings. Such as in the case of Taiwan's digital ministry running pilots for budget ballots in 2018 further validating the benefits of the square root method in voting theory.
 
 ## Polycentrism 
 
 Looking back at Kula ring and comparing it to modern corporate governance, the ancient exchange system had multiple degrees of autonomy such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements and bipartisan issues), whereas shareholder governance only has capital to equate power. In 1951 [Micheal Polanyi](https://en.wikipedia.org/wiki/Michael_Polanyi) philosophised the thesis of **polycentrism**; which is defined as cooperative bodies with multiple nodes or groups of authority. On the contrary to **monocentrism**, where there is only one. Plutocracy gives the impression that it is polycentric but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and therefore usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, **no single actor has complete control or can shift the dynamics of the system alone**.
 
-The mathematical challenge becomes clear:
-
-* Consensus should be polycentric
-* Sybil immunity or deterrents is desirable 
-* Voting power shouldn't have a **fixed** relationship with capital 
-* Time-weighting should not be linear and should be competitive 
-* Voting power should be evolutionary, with distinct "phases" similar to human relationships
-
 _What if time itself determined the balance between quadratic and linear weighting?_
+
+Large voting coalitions could be saturated in the initial phases due to a high proportion of quadratic weighting then with time moves towards purely linear, known as the **power ratio**.  On the topic of competitiveness due to first mover advantage, time dilution could rebalance voting power on subsequent deposit or inventory of shares, essentially acting as the **effective time weight**.
+
+Shifting voting power from composite weighting to purely linear shows some interesting dynamics, by default such a voting power curve prioritises quadratic weighting early on, undoubtedly favours Sybil attacks. Yet, if an adversary does choose this strategy they effectively expense over 50% of their potential voting power for if they just concentrated their shares into a single deposit. The aspiration in order to combat short term power accumulation is a mature hierarchy of voter demographics across different time weights, that unanimously bare more influence. 
+
+In order to distinctively further discourage this advantageous behaviour of splitting attacks and to follow voting power more in accordance to human relationships, **power tranches** could be proposed which would normalise voting power across key growth stages. Such as beginner, intermediate and mature, which has notable benefits for **distributed consensus** and make Sybil attacks even more costly.
+
+
+This is exactly the theory behind a new model for shareholder governance we designed denoted [Polycentric voting]().
+
+## Collectivism
+
+For things to improve there must be collective thought and action, if all stayed quiet neither would change, focal acts as a centre of action and thought in technology for good. 
+
+Expect further commentary and publications, support us at [ops@focal.org]() 
