@@ -35,6 +35,8 @@ layout: default
     </div>
   </div>
 
+  <div id="ref-section"></div>
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
   {%- endif -%}
@@ -53,6 +55,12 @@ layout: default
     })
 
     window.addEventListener('load', () => {
+      const footnotes = document.querySelector(".footnotes");
+      const target = document.querySelector("#ref-section");
+
+      if (footnotes && target) {
+        target.appendChild(footnotes);
+      }
       if (window.innerWidth > 1024) {
         const headings = document.querySelectorAll('.post-content h2, .post-content h3');
         const tocList = document.getElementById('toc-list');
@@ -87,7 +95,7 @@ layout: default
           headings.forEach(heading => {
             const top = heading.getBoundingClientRect().top;
 
-            if (top < 500) {
+            if (top < 600) {
               document.querySelectorAll('.toc a').forEach(a => a.classList.remove('active'));
               document.querySelectorAll('.toc li').forEach(li => li.classList.remove('active'));
               const activeLink = document.querySelector(`.toc a[href="#${heading.id}"]`);
