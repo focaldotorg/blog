@@ -36,6 +36,7 @@
 .site-footer {
   border-top: 3px solid #999999;
 }
+
 .site-footer .footer-col-wrapper {
   display: flex;
   flex-direction: row;
@@ -185,7 +186,9 @@ figcaption {
   color: #cdcdcd;
   display: block;
   padding: 4px 0;
-}.site-footer .footer-col-wrapper {
+}
+
+.site-footer .footer-col-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -254,9 +257,29 @@ figcaption {
   margin: 0px;
 }
 
+.nav-back-btn { 
+  position: relative;
+}
+
+.nav-back-btn a {
+  position: absolute;
+  font-size: 35px;
+  color: #cdcdcd;
+  left: 0px;
+  margin-left: -135px;
+  text-decoration: none !important;
+}
+
+.nav-back-btn a:hover { 
+  color: black;
+} 
 
 @media (max-width: 1024px) {
   
+  .nav-back-btn { 
+    display: none;
+  }
+
   .toc { 
     display: none; 
   }
