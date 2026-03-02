@@ -57,6 +57,7 @@
 .idiom {
   float: none;
 }
+
 #ref-section {
   margin-bottom: 80px;
 }
@@ -259,6 +260,7 @@ figcaption {
 
 .nav-back-btn { 
   position: relative;
+  display: none;
 }
 
 .nav-back-btn a {
