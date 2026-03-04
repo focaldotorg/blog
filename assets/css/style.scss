@@ -48,11 +48,11 @@ h1, h2, h3, h4, h5, h6 {
 .site-header {
   border-top: none;
   padding-bottom: 5px;
-  border-bottom: 3px solid #999999;
+  border-bottom: 3px solid #cdcdcd;
 }
 
 .site-footer {
-  border-top: 3px solid #999999;
+  border-top: 3px solid #cdcdcd;
 }
 
 .site-footer .footer-col-wrapper {
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-list li {
-  border: solid 2.5px #999999;
+  border: solid 2.5px #cdcdcd;
   border-radius: 0px;
   padding: 30px 20px;
 }
@@ -315,8 +315,12 @@ figcaption {
 
   .site-nav {
     background: none;
-    border: 2.5px solid #999999;
+    border: 2.5px solid #cdcdcd;
     border-radius: 0px;
+  }
+
+  .post-header {
+    margin-top: 50px; 
   }
 
 }
