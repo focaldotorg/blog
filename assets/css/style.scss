@@ -6,6 +6,24 @@
   "minima/skins/classic",
   "minima/initialize";
 
+@font-face {
+  font-family: 'Wermut';
+  src: url('../fonts/wermut-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Wermut';
+  src: url('../fonts/wermut-italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Wermut', serif;
+}
+
 .wrapper {
   max-width: calc(650px - (30px))
 }
