@@ -22,6 +22,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Wermut', serif;
+  color: #5c6165;
 }
 
 .wrapper {
@@ -91,13 +92,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px 20px;
 }
 
+.post-list li h2 {
+  color: #5c6165; 
+  font-size: 30px;
+}
+
 .post-list li a {
   margin-block-start: 0px;
 }
 
 .post-list li a:hover {
   text-decoration: none;
-  color: $brand-color;
+  color: black;
 }
 
 .post-description {
@@ -111,7 +117,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-list li a h2 {
   margin-bottom: 3px;
-  color: black;
 }
 
 .post-list li:hover {
