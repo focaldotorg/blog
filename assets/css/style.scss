@@ -45,6 +45,10 @@ body {
   font-family: monospace;
 }
 
+.page {
+  padding: 10px 20px 0px 20px;
+}
+
 .page-content {
   font-family: 'Signifier', serif;
   line-height: 1.2;
@@ -126,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-list li h2 {
   color: #5c6165; 
   font-size: 30px;
-  margin-bottom: 15px !important;
+  margin-bottom: 12px !important;
 }
 
 .post-list li a {
@@ -363,7 +367,7 @@ figcaption {
   }
 
   .post-header {
-    margin-top: 50px; 
+    margin-top: 20px; 
   }
 
 }
