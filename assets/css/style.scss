@@ -41,6 +41,10 @@
   font-style: normal;
 }
 
+body {
+  font-family: monospace;
+}
+
 .page-content {
   font-family: 'Signifier', serif;
   line-height: 1.2;
@@ -122,6 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 .post-list li h2 {
   color: #5c6165; 
   font-size: 30px;
+  margin-bottom: 15px !important;
 }
 
 .post-list li a {
@@ -212,6 +217,7 @@ figcaption {
   left: calc(10% - 280px);
   height: 100%;
   width: 260px;
+  font-family: 'Wermut', serif;
   font-size: 0.85em;
   overflow: hidden;
 }
