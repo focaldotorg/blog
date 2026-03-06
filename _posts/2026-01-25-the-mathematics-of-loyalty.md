@@ -90,10 +90,6 @@ This is exactly the theory behind a new model for shareholder governance we desi
 
 ## Collectivism
 
-For things to improve there must be collective[^1] thought and action, if all stayed quiet neither would change, focal acts as the centre of action and thought in technology for good. 
+For things to improve there must be collective thought and action, if all stayed quiet neither would change, focal acts as the centre of action and thought in technology for good. 
 
-Expect further commentary and publications, support us at [ops@focal.org]()
-
-
-[^1]: Smith, J. (2020). *The Color of Sky*. Journal of Things, 12(3), 45–67.
-
+Expect further commentary and publications, support us at [ops@focal.org]() 
