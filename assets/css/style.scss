@@ -41,12 +41,24 @@
   font-style: normal;
 }
 
+.spline {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 3px;
+  height: 100vh;
+  background-color: #cdcdcd;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
 body {
   font-family: monospace;
 }
 
 .page {
   padding: 10px 20px 0px 20px;
+  z-index: 3;
 }
 
 .page-content {
@@ -62,7 +74,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-  max-width: calc(650px - (30px))
+  max-width: calc(650px - (30px));
+  z-index: 3;
 }
 
 .trigger {
@@ -123,9 +136,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-list li {
-  border: solid 2.5px #cdcdcd;
-  border-radius: 0px;
+  border: solid 3px #cdcdcd;
+  border-radius: 0px; 
+  background: white;
+  z-index: 3;
   padding: 30px 20px;
+  position: relative;
 }
 
 .post-list li h2 {
