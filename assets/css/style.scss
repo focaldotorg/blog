@@ -144,12 +144,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0px; 
   background: white;
   z-index: 3;
-  padding: 30px 20px;
+  padding: 30px 30px;
   position: relative;
 }
 
 .post-list li h2 {
   color: #5c6165; 
+  height: auto;
   font-size: 30px;
   margin-bottom: 12px !important;
 }
@@ -174,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-list li:hover {
-  border-color: black;
+  border-color: #5c6165;
 }
 
 .post-list li a h2 {
