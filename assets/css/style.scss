@@ -86,6 +86,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 
+.post-content h1, h2, h3, h4, h5, h6 {
+  height: 44px;
+}
+
 .site-logo {
   height: 30px;
 }
@@ -235,11 +239,11 @@ figcaption {
 .toc {
   position: absolute;
   top: 0;
-  left: calc(10% - 280px);
+  left: calc(10% - 260px);
   height: 100%;
-  width: 260px;
+  width: 360px;
   font-family: 'Wermut', serif;
-  font-size: 0.85em;
+  font-size: 0.9em;
   overflow: hidden;
 }
 
@@ -252,16 +256,16 @@ figcaption {
 .toc ul::before {
   content: '';
   position: absolute;
-  left: 30%;
+  left: 20%;
   top: 0;
   bottom: 0;
-  width: 2.5px;
+  width: 2px;
   background: #cdcdcd;
 }
 
 .toc li {
   position: relative;
-  padding-left: calc(30% + 20px);
+  padding-left: calc(20% + 24px);
 }
 
 .toc a {
