@@ -56,6 +56,15 @@ body {
   font-family: monospace;
 }
 
+sup {
+  font-size: 0.75em;
+  line-height: 0;    
+  vertical-align: baseline;
+  position: relative;
+  font-weight: 600;
+  top: -0.4em;
+}
+
 .page {
   padding: 10px 20px 0px 20px;
   z-index: 3;
