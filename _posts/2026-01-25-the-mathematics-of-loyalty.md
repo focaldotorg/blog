@@ -93,6 +93,7 @@ Expect further commentary and publications, support us at [ops@focal.org]()
 
 [^1]: The Kula ring
 [^2]: Tenure voting 
-[^3]: Shapley-Shubik indexes
+[^3]: Shapley-Shubik index
+[^4]: UN Security Council Analysis Law Review
 [^5]: Banzhaf index
-
+[^6]: Sybil attack
