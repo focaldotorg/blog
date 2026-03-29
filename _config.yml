@@ -1,9 +1,8 @@
 title: "focal"
 url: https://blog.focal.org
-baseurl: "https://focal.org"
+baseurl: ""
 author:
   name: focaldotorg
-description: &nbsp;
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
