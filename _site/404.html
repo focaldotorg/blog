@@ -37,15 +37,14 @@
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <body><header class="site-header">
 
-  <div class="page">
-<a class="site-title" rel="author" href="/">
-      <img class="site-logo" src="/assets/img/logo.png">
+  <div class="page"><a class="site-title" rel="author" href="/">
+      <img class="site-logo" src="/assets/img/logo.png" />
     </a><nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
-            <svg viewbox="0 0 18 15" width="18px" height="15px">
-              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
             </svg>
           </span>
         </label>
@@ -54,8 +53,7 @@
           <a class="page-link" href="/about/">about</a>
           <a href="javascript:void(0)" class="mailing-list" data-micromodal-trigger="ml-modal">mailing list</a>
         </div>
-      </nav>
-</div>
+      </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -81,8 +79,7 @@
 </div>
 
       </div>
-    </main>
-<div class="modal" id="ml-modal" aria-hidden="true">
+    </main><div class="modal" id="ml-modal" aria-hidden="true">
   <div class="modal__overlay" tabindex="-1" data-micromodal-close>
     <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="ml-modal-title">
       <div class="modal__header">
@@ -90,9 +87,17 @@
         <button class="modal__close" aria-label="Close" data-micromodal-close></button>
       </div>
       <div class="modal__content">
-        <p class="modal__desc">Enter your email address to subscribe to our newsletter, gain access to community calls, development logs and much more.</p>
+        <p class="modal__desc">
+          Most people see the conclusions, subscribers see the work. Receive community call invitations, development logs and research updates to your inbox.
+        </p>
         <div class="modal__form">
-          <input type="email" id="ml-email" placeholder="your@email.com" autocomplete="email" spellcheck="false">
+          <input
+            type="email"
+            id="ml-email"
+            placeholder="your@email.com"
+            autocomplete="email"
+            spellcheck="false"
+          />
           <button id="ml-submit">submit</button>
         </div>
         <p id="ml-status" aria-live="polite"></p>
@@ -100,132 +105,6 @@
     </div>
   </div>
 </div>
-
-<style>
-  a.mailing-list-trigger {
-    cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjE2NDEgMTUuNzE4TDAuMDAwNDUwNzEyIC0yLjc4NjkyZS0wNUwwLjAxNDU4ODUgMjIuNzgyOUw2LjQxNTA2IDE0Ljk4MjZMMTkuMTY0MSAxNS43MThaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") 0 0, pointer;
-  }
-
-  .modal { display: none; }
-  .modal.is-open { display: block; }
-
-  .modal__overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-
-  .modal__container {
-    background: #fff;
-    padding: 2.5rem;
-    width: min(480px, 75vw);
-    border: 1px solid #000;
-    will-change: transform, opacity;
-  }
-
-  /* enter: slide up from below centre */
-  @keyframes mlSlideUp {
-    from { transform: translateY(60px); opacity: 0; }
-    to   { transform: translateY(0);    opacity: 1; }
-  }
-
-  /* exit: span up and out */
-  @keyframes mlSpanUp {
-    from { transform: translateY(0);     opacity: 1; }
-    to   { transform: translateY(-80px); opacity: 0; }
-  }
-
-  .modal__container[data-state="opening"] {
-    animation: mlSlideUp 0.42s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  }
-
-  .modal__container[data-state="closing"] {
-    animation: mlSpanUp 0.28s cubic-bezier(0.4, 0, 1, 1) forwards;
-  }
-
-  .modal__header {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-
-  .modal__title {
-    font-size: 1rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    color: #000;
-    margin: 0;
-  }
-
-  .modal__close {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjE2NDEgMTUuNzE4TDAuMDAwNDUwNzEyIC0yLjc4NjkyZS0wNUwwLjAxNDU4ODUgMjIuNzgyOUw2LjQxNTA2IDE0Ljk4MjZMMTkuMTY0MSAxNS43MThaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") 0 0, pointer;
-  }
-
-  .modal__close::before {
-    content: '×';
-    font-size: 1.4rem;
-    color: #999;
-    line-height: 1;
-  }
-
-  .modal__desc {
-    font-size: 1rem;
-    color: #444;
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-  }
-
-  .modal__form {
-    display: flex;
-    border: 1px solid #000;
-  }
-
-  #ml-email {
-    flex: 1;
-    border: none;
-    outline: none;
-    padding: 0.65rem 0.85rem;
-    font-size: 0.9rem;
-    font-family: inherit;
-    background: transparent;
-    color: #000;
-    cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAyOSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc1IDBWNC43NUgyOVY2LjI1SDE1Ljc1VjExSDE0LjI1VjYuMjVIMFY0Lwc1SDE0LjI1VjBIMTUuNzVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") 14 5, text;
-  }
-
-  #ml-email::placeholder { color: #aaa; }
-
-  #ml-submit {
-    border: none;
-    border-left: 1px solid #000;
-    background: #000;
-    color: #fff;
-    padding: 0.65rem 1.1rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-family: inherit;
-    cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMCAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE5LjE2NDEgMTUuNzE4TDAuMDAwNDUwNzEyIC0yLjc4NjkyZS0wNUwwLjAxNDU4ODUgMjIuNzgyOUw2LjQxNTA2IDE0Ljk4MjZMMTkuMTY0MSAxNS43MThaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") 0 0, pointer;
-  }
-
-  #ml-status {
-    font-size: 0.85rem;
-    margin-top: 0.85rem;
-    min-height: 1.2em;
-    color: #666;
-    letter-spacing: 0.02em;
-  }
-
-  #ml-status.error   { color: #c00; }
-  #ml-status.success { color: #000; }
-</style>
 
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 <script>
@@ -253,11 +132,11 @@
     submitBtn.addEventListener('click', function() {
       var email = emailEl.value.trim();
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        status.textContent = 'please enter a valid email.';
+        status.textContent = 'Please enter a valid email.';
         status.className = 'error';
         return;
       }
-      status.textContent = "you're on the list.";
+      status.textContent = "You're registered.";
       status.className = 'success';
       emailEl.value = '';
       setTimeout(function() { MicroModal.close('ml-modal'); }, 2200);
