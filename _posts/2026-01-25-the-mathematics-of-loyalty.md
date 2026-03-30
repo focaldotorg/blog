@@ -2,7 +2,7 @@
 layout: post
 author: "Samuel J. Gosling"
 title: "The Mathematics of Loyalty"
-permalink: the-mathemathics-of-loyalty
+permalink: the-mathematics-of-loyalty
 description: "Reciprocity, capital markets and governance"
 date: "25/01/2026"
 ---
