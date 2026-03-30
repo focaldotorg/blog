@@ -107,21 +107,38 @@
 </div>
 
 <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-check-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+
 <script>
   (function() {
+    firebase.initializeApp({
+      apiKey:            "AIzaSyDjm-1pNzhB1wFceJNL4prseXBCtIi57TA",
+      authDomain:        "focal-mailing-list-94ac3.firebaseapp.com",
+      projectId:         "focal-mailing-list-94ac3",
+      storageBucket:     "focal-mailing-list-94ac3.firebasestorage.app",
+      messagingSenderId: "325708458975",
+      appId:             "1:325708458975:web:73147e2b73fa1d014bf26a"
+    });
+
+    firebase.appCheck().activate(
+      new firebase.appCheck.ReCaptchaV3Provider('6LeEiZ0sAAAAAFDaZL_9hsqynCiecEl1MW9vto0t'),
+      true
+    );
+
+    var db        = firebase.firestore();
     var emailEl   = document.getElementById('ml-email');
     var submitBtn = document.getElementById('ml-submit');
     var status    = document.getElementById('ml-status');
 
     MicroModal.init({
       onShow: function(modal) {
-        var container = modal.querySelector('.modal__container');
-        container.setAttribute('data-state', 'opening');
+        modal.querySelector('.modal__container').setAttribute('data-state', 'opening');
         emailEl.focus();
       },
       onClose: function(modal) {
-        var container = modal.querySelector('.modal__container');
-        container.setAttribute('data-state', 'closing');
+        modal.querySelector('.modal__container').setAttribute('data-state', 'closing');
         status.textContent = '';
         status.className = '';
       },
@@ -131,15 +148,38 @@
 
     submitBtn.addEventListener('click', function() {
       var email = emailEl.value.trim();
+
       if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         status.textContent = 'Please enter a valid email.';
         status.className = 'error';
         return;
       }
-      status.textContent = "You're registered.";
-      status.className = 'success';
-      emailEl.value = '';
-      setTimeout(function() { MicroModal.close('ml-modal'); }, 2200);
+
+      submitBtn.disabled = true;
+      status.textContent = '';
+
+      db.collection('waitlist').doc(email).set({
+        email: email,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      })
+      .then(function() {
+        status.textContent = "You're registered.";
+        status.className = 'success';
+        emailEl.value = '';
+        setTimeout(function() { MicroModal.close('ml-modal'); }, 2200);
+      })
+      .catch(function(err) {
+        console.error(err);
+        if (err.code === 'permission-denied') {
+          status.textContent = 'Already registered.';
+        } else {
+          status.textContent = 'Something went wrong. Try again.';
+        }
+        status.className = 'error';
+      })
+      .finally(function() {
+        submitBtn.disabled = false;
+      });
     });
 
     emailEl.addEventListener('keydown', function(e) {
