@@ -1,8 +1,16 @@
 title: "focal"
+tagline: ""
+description: "a research collective."
 url: https://blog.focal.org
 baseurl: ""
 author:
   name: focaldotorg
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/splash.png
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
