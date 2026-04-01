@@ -1,6 +1,6 @@
 title: "focal"
 tagline: "a research collective."
-description: null
+description: "ops@focal.org"
 url: https://blog.focal.org
 baseurl: ""
 author:
@@ -11,6 +11,7 @@ defaults:
       path: ""
     values:
       image: /assets/img/splash.png
+      keywords: "blog, focal, research collective, non-profit research, mechanism design, economics, voting theory, focal.org, focaldotorg, thinktank"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 

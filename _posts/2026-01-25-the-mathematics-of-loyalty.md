@@ -4,6 +4,7 @@ author: "Samuel J. Gosling"
 title: "The Mathematics of Loyalty"
 permalink: the-mathematics-of-loyalty
 image: /assets/img/kula-ring-map.jpg
+keywords: "insitutional governance, plutocracy, polycentrism, polycentric voting, polycentricity, kula ring, gift economies, power indices, game theory"
 description: "Reciprocity, capital markets and governance"
 date: "25/01/2026"
 ---
