@@ -3,6 +3,7 @@ layout: post
 author: "Samuel J. Gosling"
 title: "The Mathematics of Loyalty"
 permalink: the-mathematics-of-loyalty
+image: /assets/img/kula-ring-map.jpg
 description: "Reciprocity, capital markets and governance"
 date: "25/01/2026"
 ---
