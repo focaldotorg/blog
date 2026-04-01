@@ -866,6 +866,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 70px;
 }
 
+.post-image {
+  display: none;
+}
+
 .site-header {
   border-top: none;
   padding-bottom: 5px;

@@ -1,4 +1,6 @@
 title: "focal"
+tagline: "a research collective."
+description: null
 url: https://blog.focal.org
 baseurl: ""
 author:
@@ -8,7 +10,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/splash.png
+      image: /assets/img/splash.png
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
