@@ -1,6 +1,6 @@
 title: "focal"
-tagline: ""
-description: "a research collective."
+tagline: null
+description: null
 url: https://blog.focal.org
 baseurl: ""
 author:
@@ -10,7 +10,8 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/splash.png
+      image: /assets/img/splash.png
+      keywords: "blog, focal, research collective, non-profit research, mechanism design, economics, voting theory, focal.org, focaldotorg, thinktank"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
