@@ -1034,8 +1034,7 @@ figcaption {
   left: 20%;
   top: 0;
   bottom: 0;
-  width: 2.8px;
-  background: #cdcdcd;
+  border-left: 3px solid #cdcdcd;
 }
 
 .toc li {
