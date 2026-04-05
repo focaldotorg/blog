@@ -52,16 +52,6 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 
   <script>
-    document.querySelectorAll('img[title]').forEach(img => {
-      const figure = document.createElement('figure');
-      const caption = document.createElement('figcaption');
-
-      caption.textContent = img.title;
-      img.parentNode.insertBefore(figure, img);
-      figure.appendChild(img);
-      figure.appendChild(caption);
-    })
-
     window.addEventListener('load', () => {
       const footnotes = document.querySelector(".footnotes");
       const target = document.querySelector("#ref-section");
@@ -116,6 +106,38 @@ layout: default
           });
         });
       }
+    });
+
+    var ov = document.createElement('div');
+
+    ov.className = 'img-overlay';
+    ov.innerHTML = '<span class="img-overlay-close">✕</span><img>';
+    document.body.appendChild(ov);
+
+    var ovImg = ov.querySelector('img');
+
+    ov.querySelector('.img-overlay-close').addEventListener('click', function(){
+      ov.classList.remove('active');
+    });
+    ov.addEventListener('click', function(e){
+      if(e.target !== ovImg) ov.classList.remove('active');
+    });
+
+    document.querySelectorAll('.post-content img').forEach(function(img){
+      if(img.title) {
+        var figure = document.createElement('figure');
+        var caption = document.createElement('figcaption');
+
+        caption.textContent = img.title;
+        img.parentNode.insertBefore(figure, img);
+        figure.appendChild(img);
+        figure.appendChild(caption);
+      }
+
+      img.addEventListener('click', function(){
+        ovImg.src = img.src;
+        ov.classList.add('active');
+      });
     });
   </script>
 </article>
