@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-05T02:15:47+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>ops@focal.org</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-05T15:05:43+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>ops@focal.org</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
 
 <p>Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity.</p>
 
@@ -73,21 +73,25 @@
 
 <h2 id="polycentrism">Polycentrism</h2>
 
-<p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as cooperative bodies with multiple nodes or groups of authority. On the contrary to monocentrism, where there is only one.</p>
+<p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as systems with multiple nodes or groups or centres of authority. On the contrary to monocentrism, where there is only one.</p>
 
 <p>Plutocracy’s intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
 
 <p><em>What if time itself determines the balance between quadratic and linear weighting?</em></p>
 
-<p>This is exactly the basis behind a new model for shareholder governance we designed denoted <a href="">Polycentric voting</a>, where the time is introduced as an additional domain for authority past capital.</p>
+<p>This is exactly the basis behind a new model for shareholder governance we designed denoted <a href="">Polycentric voting</a>, where time is introduced as an additional domain for authority past capital.</p>
 
-<p>Following in precedent to the flaws of past attempts, we introduce the concept of effective time weight; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
+<p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
 
-<p>In aspiration of saturating concentration of power without tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled by what we call the power ratio.</p>
-
-<p>To prove its viability we define four strategies each with a total share amount of 10,000 each with varied inventory:</p>
+<p>In aspiration of saturating concentration of power without tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled by what we call the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. To showcase its dynamics we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a total share amount of 10,000 and varied inventory schedules:</p>
 
 <p><img src="assets/img/posts/i/pv_strategy_breakdown.png" alt="Strategy overview" title="Strategy overview" /></p>
+
+<p>Furthermore, we using logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
+
+<p><img src="assets/img/posts/i/pv_strategy_benchmark.png" alt="Strategy benchmark" title="Strategy benchmark" /></p>
+
+<p>A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with a -50% loss in aggregated voting power in comparison to the Singleton strategy.</p>
 
 <h2 id="collectivism">Collectivism</h2>
 

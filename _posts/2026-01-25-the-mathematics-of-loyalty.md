@@ -75,22 +75,26 @@ Fast forward to the 21st century and there has been a reignition in voting inspi
 
 ## Polycentrism 
 
-Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 [Micheal Polanyi](https://en.wikipedia.org/wiki/Michael_Polanyi) theorised the thesis of polycentrism; which is defined as cooperative bodies with multiple nodes or groups of authority. On the contrary to monocentrism, where there is only one.
+Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 [Micheal Polanyi](https://en.wikipedia.org/wiki/Michael_Polanyi) theorised the thesis of polycentrism; which is defined as systems with multiple nodes or groups or centres of authority. On the contrary to monocentrism, where there is only one.
 
 Plutocracy's intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.
 
 _What if time itself determines the balance between quadratic and linear weighting?_
 
-This is exactly the basis behind a new model for shareholder governance we designed denoted [Polycentric voting](), where the time is introduced as an additional domain for authority past capital. 
+This is exactly the basis behind a new model for shareholder governance we designed denoted [Polycentric voting](), where time is introduced as an additional domain for authority past capital. 
 
-Following in precedent to the flaws of past attempts, we introduce the concept of effective time weight; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+Following in precedent to the flaws of past attempts, we introduce the concept of **effective time weight**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
 
-In aspiration of saturating concentration of power without tenure, we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, labelled by what we call the power ratio. 
-
-To prove its viability we define four strategies each with a total share amount of 10,000 each with varied inventory:
+In aspiration of saturating concentration of power without tenure, we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, labelled by what we call the **power ratio**. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. To showcase its dynamics we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a total share amount of 10,000 and varied inventory schedules:
 
 ![Strategy overview](assets/img/posts/i/pv_strategy_breakdown.png "Strategy overview")
- 
+
+Furthermore, we using logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as **power tranches**; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.
+
+![Strategy benchmark](assets/img/posts/i/pv_strategy_benchmark.png "Strategy benchmark")
+
+A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with a -50% loss in aggregated voting power in comparison to the Singleton strategy. 
+
 ## Collectivism
 
 For things to improve there must be collective thought and action, if all stayed quiet neither would change, focal acts as the centre of action and thought in the digital era.
