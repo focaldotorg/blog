@@ -329,10 +329,7 @@ figcaption {
   float: none;
 }
 
-.toc a.active {
-  color: #000;
-  font-weight: bold;
-}
+.toc a.active { color: #000; }
 
 .toc li::before {
   content: '❙';
