@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-05T15:09:05+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>ops@focal.org</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-05T15:42:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>ops@focal.org</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
 
 <p>Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity.</p>
 
@@ -87,11 +87,11 @@
 
 <p><img src="assets/img/posts/i/pv_strategy_breakdown.png" alt="Strategy overview" title="Strategy overview" /></p>
 
-<p>Furthermore, we using logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
+<p>Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
 
 <p><img src="assets/img/posts/i/pv_strategy_benchmark.png" alt="Strategy benchmark" title="Strategy benchmark" /></p>
 
-<p>A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with a -50% loss in aggregated voting power in comparison to the Singleton strategy.</p>
+<p>A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
 
 <h2 id="collectivism">Collectivism</h2>
 

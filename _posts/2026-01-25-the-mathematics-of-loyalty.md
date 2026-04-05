@@ -89,11 +89,11 @@ In aspiration of saturating concentration of power without tenure, we introduce 
 
 ![Strategy overview](assets/img/posts/i/pv_strategy_breakdown.png "Strategy overview")
 
-Furthermore, we using logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as **power tranches**; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.
+Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as **power tranches**; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.
 
 ![Strategy benchmark](assets/img/posts/i/pv_strategy_benchmark.png "Strategy benchmark")
 
-A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with a -50% loss in aggregated voting power in comparison to the Singleton strategy. 
+A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
 
 ## Collectivism
 
