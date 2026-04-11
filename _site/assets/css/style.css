@@ -782,6 +782,14 @@ table td {
   font-weight: 700;
   font-style: normal;
 }
+blockquote {
+  color: #828282;
+  border-left: 3px solid #e8e8e8;
+  padding-left: 25px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
 body {
   cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAyOSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc1IDBWNC43NUgyOVY2LjI1SDE1Ljc1VjExSDE0LjI1VjYuMjVIMFY0Ljc1SDE0LjI1VjBIMTUuNzVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K") 14 5, auto;
 }
@@ -985,6 +993,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-content {
+  position: relative;
   margin-bottom: 90px;
 }
 

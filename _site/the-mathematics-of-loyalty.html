@@ -93,60 +93,53 @@
 
 <p>Take the Kula ring<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> of the Trobriand islands as example, a ceremonial exchange system where shell necklaces (Soulava) travel clockwise and shell armbands (Mwali) move counterclockwise through an archipelago of island communities in the Solomon sea. The objects themselves hold little utilitarian value; their worth lies entirely in the relationships they represent. A chief who receives a Soulava is expected to reciprocate with a recipient of a Mwali - not immediately, but eventually. The delay is crucial. It creates obligation, builds anticipation, and tests commitment over time.</p>
 
-<p>The system only functions because participants trust that gifts given today will be reciprocated months or years hence. What the Kula ring demonstrates is that loyalty and trust are not instantaneous - they are accumulated through repeated cycles, weighted by time. A trading partner who has participated faithfully for decades carries far more social capital than one that hasn’t. The system inherently recognises that time, weight and history matter,  and yet, many would argue “trust” cannot be quantified.</p>
+<p>The system only functions because participants trust that gifts given today will be reciprocated months or years hence. What the Kula ring demonstrates is that loyalty and trust are not instantaneous - they are accumulated through repeated cycles, weighted by time. A trading partner who has participated faithfully for decades carries far more social capital than one that hasn’t. The system inherently recognises that time, weight and history matter, and yet, many would argue “trust” cannot be quantified.</p>
 
 <h2 id="modelling-trust">Modelling trust</h2>
-<p>If we are to identify the core pillars of what constitutes trust ($T$) it would equate to: magnitude ($M$) the positive or negative social impact an interaction has on a recipient, interactions ($n$) the total number of trust-affecting events since acquaintance.</p>
 
-\[S = \sum_{i=1}^{n} M_i \tag{1}\]
+<p>If we are to identify the core pillars of what constitutes trust ($T$), we must first define loyalty ($L$) the foundation upon which trust is built. Loyalty is determined by three variables: magnitude ($M$) the positive or negative social impact an interaction has on a recipient, interactions ($n$) the total number of trust-affecting events since acquaintance, and time ($t$) how far into the relationship an interaction occurred, expressed as a proportion of the total duration.</p>
 
-<p>Not forgetting time ($t$) the duration since acquaintance. Using algebraic arithmetic, this gives us the equation:</p>
+\[L = \sum_{i=1}^{n} M_i \cdot t_i \tag{1}\]
 
-\[T =  S t\]
+<p>Trust ($T$) can then be defined as the measure of loyalty relative to the total impact of a relationship. Trust and loyalty are not interchangeable, they are separate but dependent means of navigating interactions.</p>
+
+\[T = \frac{L}{M_{total}} \tag{2}\]
 
 <p>Let’s apply these formulas to a grounded physical context to see how we can model trust:</p>
 
-<p>A friend you have known for 2 months in which you have had 5 positive interactions so far (meeting, hanging out, they lent you money, etc) with varying positive magnitudes of $M = 6, 6, 8, 5, 7$. Time is treated as a ratio of annuity.</p>
+<blockquote>
+  <p>A friend you have known for 2 months in which you have had 5 interactions with varying magnitudes of $M = {6, 6, 8, 5, 7}$:</p>
 
-<ul>
-  <li>$T = t \cdot \sum_{i=1}^{n} M_i$</li>
-  <li>$T = 0.17 \times (6 + 6 + 8 + 5 + 7)$</li>
-  <li>$T = 5.44$</li>
-</ul>
+  <p>$L = \sum_{i=1}^{n} M_i \cdot t_i$<br />
+$L = 6(0.2) + 6(0.4) + 8(0.6) + 5(0.8) + 7(1.0)$<br />
+$L = 19.4$<br />
+$T = L / M_{total} = 19.4 / 32 = 0.61$</p>
 
-<p>Now they ask you for a loan, you comply and you lend them the money, resulting in them repaying you on time.</p>
+  <p>You are repaid on time ($M_{n+1} = 20$) at month 3, all prior interactions are recalculated as proportions of the new total duration:</p>
 
-<ul>
-  <li>Magnitude of honoring trust:
-    <ul>
-      <li>$M_{new} = +7$</li>
-    </ul>
-  </li>
-  <li>Projected trust impact:
-    <ul>
-      <li>$\Delta T = M_{new} \times T_{current} \times t$</li>
-      <li>$\Delta T = (+7) \times 5.44 \times 0.17 = +6.47$</li>
-    </ul>
-  </li>
-  <li>New total trust:
-    <ul>
-      <li>$T_{new} = T + \Delta T$</li>
-      <li>$T_{new}  = 5.44 + 6.47 = 11.91$</li>
-    </ul>
-  </li>
-</ul>
+  <p>$L_{new} = \sum_{i=1}^{n+1} M_i \cdot t_i$<br />
+$L_{new} = 6(0.13) + 6(0.27) + 8(0.40) + 5(0.53) + 7(0.67) + 20(1.0)$<br />
+$L_{new} = 32.94$<br />
+$T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
+</blockquote>
 
-<p>The trust more than doubles (119% increase) as the relationship is young with modest accumulated trust, this significant positive action has a meaningful but proportionate impact. The friendship is strengthened substantially, establishing a foundation for future interactions.</p>
+<p>Showcasing the small but substantial increase in trust, given that over the course of the final month no interactions occured, if the loan was repaid sooner the positive effects on trust would clearly visible. This tells us that trust is a product of commitment, which must be maintained through sustained interactions yet decays with time.</p>
 
 <h2 id="corporate-governance">Corporate governance</h2>
 
 <p>When shareholders vote on company decisions, they are exercising power over an entity built through years of collective effort, customer relationships, and operational history. Yet our current system treats all votes identical regardless of whether the shareholder bought yesterday or has held for decades. A hedge fund that purchased shares last week has the same voting power per share as a pension fund that has held for twenty years - despite having radically different exposure profiles to their financial decisions. This is the mathematical flaw at the heart of plutocracy - it ignores time.</p>
 
-<p>The defects trickle down even to aspects such as remuneration, organisational function and commitment is secondary to the short term quarterly and annual earnings reports when the public market’s interests are prioritised. A scenario that played out at General Electronics (GE) back in 2010, where since 1987 their pension program was entirely funded by employees and contributed billions to their bottom line margin, yet CEO Jeffrey Immelt claimed it was a “drag” to the company’s fiscal operations. A comment that followed ending the defined benefit plan for employees in 2012, instead replaced with 401k compensation. GE then continued to spend up to 40 billion dollars up until 2020 on stock buybacks in an attempt to increase their financials to be attractive to the general market, all while company executives received increased pay and stock. By 2018 pensions were underfunded by a factor of 22.3 billion dollars, the largest deficit in the S&amp;P 500.  Whether you served for over three decades at the company is not relevant, whether you have managed your life around these promised incentives is not relevant, whether you were allocated shares and held is not relevant. Only the short sighted preference of the public market is.</p>
+<p>The defects trickle down even to aspects such as remuneration, organisational function and commitment is secondary to the short term quarterly and annual earnings reports when the public market’s interests are prioritised. A scenario that played out at General Electronics (GE) back in 2010, where since 1987 their pension program was entirely funded by employees and contributed billions to their bottom line margin, yet CEO Jeffrey Immelt claimed it was a “drag” to the company’s fiscal operations. A comment that followed ending the defined benefit plan for employees in 2012, instead replaced with 401k compensation. GE then continued to spend up to 40 billion dollars up until 2020 on stock buybacks in an attempt to increase their financials to be attractive to the general market, all while company executives received increased pay and stock. By 2018 pensions were underfunded by a factor of 22.3 billion dollars, <strong>the largest deficit in history of the S&amp;P 500</strong>.  Whether you served for over three decades at the company is not relevant, whether you have managed your life around these promised incentives is not relevant, whether you were allocated shares and held is not relevant. Only the short sighted preference of the public market is.</p>
 
 <p><em>Therefore, how could we factor for loyalty in a capital-weighted system?</em></p>
 
-<p>Prior attempts in this domain simply leave time-weighting unbounded and uncompetitive<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> simply introducing the factor of time itself is not enough. This approach creates what we call “entrenchment” where if time-weight is purely linear, the competitive gap is zero because of first mover advantage. Like human relationships as modeled in equation (1), shareholders should be given a degree of authority from simply being present and allocating their stake towards a dedicated function, as they already do through idle inventory. Although that is where it is troublesome to treat public markets and governance asset demographics equally. The latter being when shares or votes are committed towards the organisation’s function, the former for provisioning shares for an economic incentive. One of the major defects of plutocracy is the ambiguity of voting power, simply due to the  accessibility and continuous nature of market liquidity.</p>
+<p>Prior attempts in this domain simply leave time-weighting unbounded and uncompetitive<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup> simply introducing the factor of time itself is not enough. This approach creates what we call “entrenchment” where if time-weight is purely linear, the competitive gap is zero because of first mover advantage. Like human relationships, shareholders should be given a degree of authority from simply being present and allocating their stake towards a dedicated function, as they already do through idle inventory. Although that is where it is troublesome to treat public markets and governance asset demographics equally. The latter being when shares or votes are committed towards the organisation’s function, the former for provisioning shares for an economic incentive. One of the major defects of plutocracy is the ambiguity of voting power, simply due to the  accessibility and continuous nature of market liquidity.</p>
+
+<h2 id="commitment-as-a-trajectory">Commitment as a trajectory</h2>
+
+<p>Path-dependency is defined as the vector product of a set of actions proportional to time, while having relative obscurity in organisational theory think of it as the “commitment profile” of an actor. The means of what justifies commitment is subjective, it could be simply being present, achieving milestones or through endorsement. Looking back at equation (1) for loyalty it is clear to see the parallels, failure to maintain a relationship over-time decays the impact of prior interactions therefore loyalty can be modelled as a measure of an actors ability to sustain commitment. Simply put, it measures the rate of change of conviction.</p>
+
+<p>In organisations and human relationships trust is a interpersonal metric shaped by emotional biases, and yet while tenure can be subject to the same defects - it is grounded by time and provenance. Tenure is the encapsulation of trust in collaborative work environments of course with nuances, the same applies between loyalty and path-dependency providing a qualitative but open framework on the psychology of commitment.</p>
 
 <h2 id="history-of-voting-theory">History of voting theory</h2>
 
@@ -156,29 +149,33 @@
 
 <p>In what is now clearly a pivotal point in time when it comes to game theory and politics, consumer advocate <a href="https://en.wikipedia.org/wiki/John_Banzhaf">John F. Banzhaf III</a> was inspired by the work of Lloyd and co, upon realising the skew of power when it came to Nassau county board governance. Instead of accusations, used cold cut mathematics through devising the Banzhaf power index<sup id="fnref:5"><a href="#fn:5" class="footnote" rel="footnote" role="doc-noteref">5</a></sup> to prove the disparity in representation of member townships due to weighted vote scoring. This followed by perusing legal action against the board, which in 1991 was deemed successful enacting remodeling of the county’s governance to a more democratic and egalitarian one-member one-vote model.</p>
 
-<p>Fast forward to the 21st century and there has been a reignition in voting inspired from the foundations of the square-root method proposed by Penrose and validated by Shapley thus inspired Banzhaf. Yet more commonly acclaimed  being derived from the mechanism design work of the “point-purchase” system in 1979 by <a href="https://en.wikipedia.org/wiki/Aanund_Hylland">Hylland</a> and <a href="https://en.wikipedia.org/wiki/Richard_Zeckhauser">Zeckhauser</a> and the optimal voting rules proposed <a href="https://en.wikipedia.org/wiki/John_Ledyard_(economist)">Ledyard</a> and <a href="https://en.wikipedia.org/wiki/Thomas_Palfrey">Palfrey</a> in 1994.  Quadratic Voting (QV) proposed by <a href="https://en.wikipedia.org/wiki/Glen_Weyl">Weyl</a> and <a href="https://en.wikipedia.org/wiki/Eric_Posner">Posner</a> in 2017, uses the square-root function to replicate a “quadratic” cost in multi-balloted voting systems. It’s only flaw is the need for Sybil protection, as it ultimately fails from the exponential advantage from what is called a splitting attack<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>. Much is the reason why it has failed to be integral to capital markets and has shown more function in democratic settings, such as in the case of Taiwan’s digital ministry running pilots for budget ballots in 2018 further validating the benefits of the square root method in voting theory.</p>
+<p>Fast forward to the 21st century and there has been a reignition in voting inspired from the foundations of the square-root method proposed by Penrose and validated by Shapley thus inspired Banzhaf. Yet more commonly acclaimed  being derived from the mechanism design work of that of “point-purchase” systems and the optimal voting rules<sup id="fnref:6"><a href="#fn:6" class="footnote" rel="footnote" role="doc-noteref">6</a></sup>.  Quadratic Voting (QV) proposed by <a href="https://en.wikipedia.org/wiki/Glen_Weyl">Weyl</a> and <a href="https://en.wikipedia.org/wiki/Eric_Posner">Posner</a> in 2017, uses the square-root function to replicate a “quadratic” cost in multi-balloted voting systems. It’s only flaw is the need for Sybil protection, as it ultimately fails from the exponential advantage from what is called a splitting attack<sup id="fnref:7"><a href="#fn:7" class="footnote" rel="footnote" role="doc-noteref">7</a></sup>. Much is the reason why it has failed to be integral to capital markets and has shown more function in democratic settings, such as in the case of Taiwan’s digital ministry running pilots for budget ballots in 2018 further validating the benefits of the square root method in voting theory.</p>
 
 <h2 id="polycentrism">Polycentrism</h2>
 
-<p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as systems with multiple nodes or groups or centres of authority. On the contrary to monocentrism, where there is only one.</p>
+<p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as systems with multiple groups or centres of authority. On the contrary to monocentrism, where there is only one.</p>
 
 <p>Plutocracy’s intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
 
 <p><em>What if time itself determines the balance between quadratic and linear weighting?</em></p>
 
-<p>This is exactly the basis behind a new model for shareholder governance we designed denoted <a href="">Polycentric voting</a>, where time is introduced as an additional domain for authority past capital.</p>
+<p>This is exactly the basis behind a new voting model for capital markets we designed known as <a href="">Polycentric voting</a>, where time is introduced as an additional domain for authority past capital.</p>
 
 <p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
 
-<p>In aspiration of saturating concentration of power without tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled by what we call the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. To showcase its dynamics we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a total share amount of 10,000 and varied inventory schedules:</p>
+<p>Within this we propose a new quantitative model for modelling <strong>tenure</strong>, by formalising path-dependency as the variance of an actors time weight we get a distinctive map of the trajectory of their commitment, with  tenure being the slope of that curvature. Providing a distinctive profile of stakeholders behaviour regardless of stake.</p>
+
+<p>To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
 
 <p><img src="assets/img/posts/i/pv_strategy_breakdown.png" alt="Strategy overview" title="Strategy overview" /></p>
+
+<p>To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled as the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller.</p>
 
 <p>Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
 
 <p><img src="assets/img/posts/i/pv_strategy_benchmark.png" alt="Strategy benchmark" title="Strategy benchmark" /></p>
 
-<p>A byproduct of the temporal but composite weighting scheme is Sybil resistence, as observed with the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
+<p>A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
 
 <h2 id="collectivism">Collectivism</h2>
 
@@ -189,22 +186,25 @@
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1">
-      <p>The Kula ring <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Malinowski, <em>Argonauts of the Western Pacific</em> (1922) <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>Tenure voting <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Berger, D.J., Solomon, S.D. &amp; Benjamin, A., <em>Tenure Voting and the U.S. Public Company</em>, The Business Lawyer, Vol. 72, No. 2 (2017) <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:3">
-      <p>Shapley-Shubik index <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Shapley &amp; Shubik, <em>A Method for Evaluating the Distribution of Power in a Committee System</em> (1954) <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:4">
-      <p>UN Security Council Analysis Law Review <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Shapley &amp; Shubik, <em>The Application of Power Indexes to World Politics</em> (1954) — UN Security Council analysis <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:5">
-      <p>Banzhaf index <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Banzhaf, <em>Weighted Voting Doesn’t Work</em> (1965) <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:6">
-      <p>Sybil attack <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Hylland &amp; Zeckhauser, <em>The Efficient Allocation of Public Goods</em> (1979); Ledyard &amp; Palfrey, <em>The Provision of Public Goods Under Alternative Electoral Institutions</em> (1994) <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7">
+      <p>Douceur, J.R., <em>The Sybil Attack</em> (2002), Microsoft Research <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
