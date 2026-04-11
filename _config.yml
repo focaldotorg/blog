@@ -1,10 +1,14 @@
 title: "focal"
 tagline: "blog"
-description: "ops@focal.org"
+description: "collective commentary"
 url: https://blog.focal.org
 baseurl: ""
 author:
-  name: focaldotorg
+  name: ops@focal.org
+
+lang: en-IE
+locale: en_IE
+logo: /assets/img/favicon.svg
 
 defaults:
   - scope:
