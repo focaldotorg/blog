@@ -41,6 +41,11 @@
   font-style: normal;
 }
 
+::selection {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 mjx-math {
   white-space: normal !important; 
   line-height: normal !important;
