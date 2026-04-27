@@ -6,6 +6,26 @@
   "minima/skins/classic",
   "minima/initialize";
 
+:root { 
+  --color-basis: #ffffff;
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-ternary: #cdcdcd;
+  --color-peripheral: #000000;
+  --color-auxilary: #e8e8e8;
+}
+
+[data-theme="dark"] {
+  :root {
+    --color-basis: #000000;
+    --color-primary: #111111;
+    --color-secondary: #ffffff;
+    --color-ternary: #cdcdcd;
+    --color-peripheral: #333333;
+    --color-auxiliary: #808080;
+  }
+}
+
 @font-face {
   font-family: 'Wermut';
   src: url('../fonts/wermut-regular.otf') format('opentype');
@@ -42,8 +62,8 @@
 }
 
 ::selection {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--color-primary);
+  color: var(--color-basis);
 }
 
 mjx-math {
@@ -52,7 +72,7 @@ mjx-math {
 }
 
 blockquote {
-  color: #828282;
+  color: var(--color-auxiliary);
   border-left: 3px solid #e8e8e8;
   padding-left: 25px;
   font-size: 1.2rem;
