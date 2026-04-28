@@ -112,7 +112,7 @@ Expect further commentary and publications, support us at [ops@focal.org]()
 [^1]: Malinowski, *Argonauts of the Western Pacific* (1922)
 [^2]: Berger, D.J., Solomon, S.D. & Benjamin, A., *Tenure Voting and the U.S. Public Company*, The Business Lawyer, Vol. 72, No. 2 (2017)
 [^3]: Shapley & Shubik, *A Method for Evaluating the Distribution of Power in a Committee System* (1954)
-[^4]: Shapley & Shubik, *The Application of Power Indexes to World Politics* (1954) — UN Security Council analysis
+[^4]: Shapley & Shubik, *The Application of Power Indexes to World Politics* (1954) 
 [^5]: Banzhaf, *Weighted Voting Doesn't Work* (1965)
 [^6]: Hylland & Zeckhauser, *The Efficient Allocation of Public Goods* (1979); Ledyard & Palfrey, *The Provision of Public Goods Under Alternative Electoral Institutions* (1994)
 [^7]: Douceur, J.R., *The Sybil Attack* (2002), Microsoft Research
