@@ -14,18 +14,18 @@
   --color-peripheral: #cdcdcd;
   --color-auxilary: #828282;
   --color-contrast: #111111;
+  --color-quote: #e8e8e8;
 }
 
-[data-theme="dark"] {
-  :root {
-    --color-basis: #000000;
-    --color-primary: #111111;
-    --color-secondary: #ffffff;
-    --color-ternary: #cdcdcd;
-    --color-peripheral: #333333;
-    --color-auxiliary: #808080;
-    --color-contrast: #111111;
-  }
+:root[data-theme="dark"] {
+  --color-basis: #252525;
+  --color-primary: #ffffff;
+  --color-secondary: #e8e8e8;
+  --color-ternary: #ffffff;
+  --color-peripheral: #838383;
+  --color-auxilary: #b3b3b3;
+  --color-contrast: #ffffff;
+  --color-quote: #6f6f6f;
 }
 
 @font-face {
@@ -75,7 +75,7 @@ mjx-math {
 
 blockquote {
   color: var(--color-auxilary);
-  border-left: 3px solid #e8e8e8;
+  border-left: 3px solid var(--color-quote);
   padding-left: 25px;
   font-size: 1.2rem;
   font-style: italic;
@@ -101,6 +101,8 @@ a, button, [role="button"], input[type="submit"], input[type="button"], label, s
 }
 
 body {
+  color: var(--color-primary);
+  background: var(--color-basis);
   font-family: monospace;
 }
 
@@ -272,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .idiom {
   float: right;
-  color: var(--color-primary);
+  color: var(--color-peripheral);
 }
 
 .contact-list {
@@ -593,7 +595,7 @@ figcaption {
 
 #ml-submit:hover {
   background: transparent;
-  color: black;
+  color: var(--color-primary);
 }
 
 #ml-status {

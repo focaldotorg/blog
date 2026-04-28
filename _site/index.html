@@ -37,6 +37,20 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <script>
+    (function() {
+      const updateTheme = () => {
+        const hour = new Date().getHours();
+        const isDarkTime = hour >= 21 || hour < 9;
+        const theme = isDarkTime ? 'dark' : 'light';
+
+        document.documentElement.setAttribute('data-theme', theme);
+      };
+
+      updateTheme();
+      setInterval(updateTheme, 60000);
+    })();
+  </script>
+  <script>
     MathJax = {
       options: { enableMenu: false },
       tex: {
@@ -80,7 +94,7 @@
               <span class="post-meta">Jan 25, 2026</span>
               <span class="post-description">&nbsp;&nbsp;Reciprocity, capital markets and governance </span>
             </p>
-            <img class="post-image" src="/assets/img/kula-ring-map.jpg" />
+            <img class="post-image" src="/assets/img/posts/i/kula-ring-map.jpg" />
           </div>
         </a>
       </li></ul>

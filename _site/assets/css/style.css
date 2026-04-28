@@ -752,6 +752,28 @@ table td {
     width: calc(50% - 30px / 2);
   }
 }
+:root {
+  --color-basis: #ffffff;
+  --color-primary: #000000;
+  --color-secondary: #5c6165;
+  --color-ternary: #888888;
+  --color-peripheral: #cdcdcd;
+  --color-auxilary: #828282;
+  --color-contrast: #111111;
+  --color-quote: #e8e8e8;
+}
+
+:root[data-theme=dark] {
+  --color-basis: #252525;
+  --color-primary: #ffffff;
+  --color-secondary: #e8e8e8;
+  --color-ternary: #ffffff;
+  --color-peripheral: #838383;
+  --color-auxilary: #b3b3b3;
+  --color-contrast: #ffffff;
+  --color-quote: #6f6f6f;
+}
+
 @font-face {
   font-family: "Wermut";
   src: url("../fonts/wermut-regular.otf") format("opentype");
@@ -782,14 +804,19 @@ table td {
   font-weight: 700;
   font-style: normal;
 }
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-basis);
+}
+
 mjx-math {
   white-space: normal !important;
   line-height: normal !important;
 }
 
 blockquote {
-  color: #828282;
-  border-left: 3px solid #e8e8e8;
+  color: var(--color-auxilary);
+  border-left: 3px solid var(--color-quote);
   padding-left: 25px;
   font-size: 1.2rem;
   font-style: italic;
@@ -809,12 +836,14 @@ a, button, [role=button], input[type=submit], input[type=button], label, select,
   left: 50%;
   width: 3px;
   height: 100vh;
-  background-color: #cdcdcd;
+  background-color: var(--color-peripheral);
   transform: translateX(-50%);
   z-index: 0;
 }
 
 body {
+  color: var(--color-primary);
+  background: var(--color-basis);
   font-family: monospace;
 }
 
@@ -841,7 +870,7 @@ sup {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Wermut", serif;
-  color: #5c6165;
+  color: var(--color-secondary);
   letter-spacing: -0.02em;
 }
 
@@ -851,7 +880,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .trigger {
-  background: white;
+  background: var(--color-basis);
 }
 
 .footer-col {
@@ -867,12 +896,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p-meta {
-  color: #cdcdcd;
+  color: var(--color-peripheral);
 }
 
 .p-author {
   font-weight: 400;
-  color: black;
+  color: var(--color-primary);
 }
 
 .post-header {
@@ -928,16 +957,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-list li {
-  border: solid 3px #cdcdcd;
+  border: solid 3px var(--color-peripheral);
   border-radius: 0px;
-  background: white;
+  background: var(--color-basis);
   z-index: 3;
   padding: 30px 30px;
   position: relative;
+  color: var(--color-primary);
 }
 
 .post-list li h2 {
-  color: #5c6165;
   height: auto;
   font-size: 30px;
   margin-bottom: 12px !important;
@@ -945,17 +974,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-list li a {
   margin-block-start: 0px;
+  color: var(--color-primary);
 }
 
 .post-list li a:hover {
   text-decoration: none;
-  color: black;
 }
 
 .post-description {
   text-decoration: none;
   font-size: 19px;
-  color: black;
 }
 
 .post-meta {
@@ -963,7 +991,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-list li:hover {
-  border-color: #888888;
+  border-color: var(--color-ternary);
 }
 
 .post-list li a h2 {
@@ -987,7 +1015,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .idiom {
   float: right;
-  color: #828282;
+  color: var(--color-peripheral);
 }
 
 .contact-list {
@@ -1049,7 +1077,7 @@ figcaption {
   left: 20%;
   top: 0;
   bottom: 0;
-  border-left: 3px solid #cdcdcd;
+  border-left: 3px solid var(--color-peripheral);
 }
 
 .toc li {
@@ -1059,7 +1087,7 @@ figcaption {
 
 .toc a {
   text-decoration: none;
-  color: #cdcdcd;
+  color: var(--color-peripheral);
   display: block;
   padding: 4px 0;
 }
@@ -1086,7 +1114,7 @@ figcaption {
 }
 
 .toc a.active {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .toc li::before {
@@ -1099,11 +1127,11 @@ figcaption {
   border-radius: 0;
   transform: none;
   top: 4px;
-  color: #cdcdcd;
+  color: var(--color-peripheral);
 }
 
 .toc li.active::before {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .post-wrapper {
@@ -1140,14 +1168,14 @@ figcaption {
 .nav-back-btn a {
   position: absolute;
   font-size: 35px;
-  color: #cdcdcd;
+  color: var(--color-peripheral);
   left: 0px;
   margin-left: -135px;
   text-decoration: none !important;
 }
 
 .nav-back-btn a:hover {
-  color: black;
+  color: var(--color-primary);
 }
 
 .mailing-list {
@@ -1182,7 +1210,7 @@ figcaption {
   position: fixed;
   top: 16px;
   right: 20px;
-  color: #fff;
+  color: var(--color-primary);
   font-size: 22px;
   opacity: 0.7;
   line-height: 1;
@@ -1219,7 +1247,7 @@ figcaption {
 }
 
 .modal__container {
-  background: #fff;
+  background: var(--color-basis);
   padding: 2.5rem;
   width: min(480px, 75vw);
   will-change: transform, opacity;
@@ -1276,12 +1304,12 @@ figcaption {
 .modal__close::before {
   content: "×";
   font-size: 2rem;
-  color: #999;
+  color: var(--color-auxilary);
 }
 
 .modal__desc {
   font-size: 1.2rem;
-  color: black;
+  color: var(--color-primary);
   font-family: "Signifier";
   margin-bottom: 1.5rem;
   line-height: 1.3;
@@ -1289,7 +1317,7 @@ figcaption {
 
 .modal__form {
   display: flex;
-  border: 2px solid #cdcdcd;
+  border: 2px solid var(--color-peripheral);
 }
 
 #ml-email {
@@ -1299,19 +1327,19 @@ figcaption {
   padding: 0.65rem 0.85rem;
   font-size: 0.9rem;
   font-family: inherit;
-  background: #5c6165;
-  color: #ffffff;
+  background: var(--color-secondary);
+  color: var(--color-basis);
 }
 
 #ml-email::placeholder {
-  color: #cdcdcd;
+  color: var(--color-peripheral);
 }
 
 #ml-submit {
   border: none;
-  border-left: 2px solid #cdcdcd;
-  background: #111111;
-  color: white;
+  border-left: 2px solid var(--color-peripheral);
+  background: var(--color-contrast);
+  color: var(--color-basis);
   padding: 0.65rem 1.1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -1320,7 +1348,7 @@ figcaption {
 
 #ml-submit:hover {
   background: transparent;
-  color: black;
+  color: var(--color-primary);
 }
 
 #ml-status {
@@ -1364,7 +1392,7 @@ figcaption {
   }
   .site-nav {
     background: none;
-    border: 2.5px solid #cdcdcd;
+    border: 2.5px solid var(--color-peripheral);
     border-radius: 0px;
     margin-top: 8px;
   }
