@@ -15,6 +15,7 @@
   --color-auxilary: #828282;
   --color-contrast: #111111;
   --color-quote: #e8e8e8;
+  --color-highlight: #2a7ae2;
 }
 
 :root[data-theme="dark"] {
@@ -25,7 +26,8 @@
   --color-peripheral: #838383;
   --color-auxilary: #b3b3b3;
   --color-contrast: #ffffff;
-  --color-quote: #6f6f6f;
+  --color-quote: #6f6f6f; 
+  --color-highlight: #ffc760;
 }
 
 @font-face {
@@ -61,6 +63,14 @@
   src: url('./artifacts/fonts/signifier-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+}
+
+a, a:visited { 
+  color: var(--color-highlight);
+}
+
+a:hover { 
+  color: var(--color-primary);
 }
 
 ::selection {
