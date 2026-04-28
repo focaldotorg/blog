@@ -11,7 +11,7 @@
 <title>focal | blog</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="focal" />
-<meta name="author" content="ops@focal.org" />
+<meta name="author" content="focaldotorg" />
 <meta property="og:locale" content="en_IE" />
 <meta name="description" content="collective commentary" />
 <meta property="og:description" content="collective commentary" />
@@ -24,7 +24,7 @@
 <meta property="twitter:image" content="https://blog.focal.org/assets/img/splash.png" />
 <meta property="twitter:title" content="focal" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"ops@focal.org"},"description":"collective commentary","headline":"focal","image":"https://blog.focal.org/assets/img/splash.png","name":"focal","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.focal.org/assets/img/favicon.svg"},"name":"ops@focal.org"},"url":"https://blog.focal.org/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"focaldotorg"},"description":"collective commentary","headline":"focal","image":"https://blog.focal.org/assets/img/splash.png","name":"focal","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.focal.org/assets/img/favicon.svg"},"name":"focaldotorg"},"url":"https://blog.focal.org/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.focal.org/feed.xml" title="focal" />
@@ -37,6 +37,20 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <script>
+    (function() {
+      const updateTheme = () => {
+        const hour = new Date().getHours();
+        const isDarkTime = hour >= 21 || hour < 9;
+        const theme = isDarkTime ? 'dark' : 'light';
+
+        document.documentElement.setAttribute('data-theme', theme);
+      };
+
+      updateTheme();
+      setInterval(updateTheme, 60000);
+    })();
+  </script>
+  <script>
     MathJax = {
       options: { enableMenu: false },
       tex: {
@@ -49,7 +63,7 @@
   <body><header class="site-header">
 
   <div class="page"><a class="site-title" rel="author" href="/">
-      <img class="site-logo" src="/assets/img/logo.png" />
+      <img class="site-logo" />
     </a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
@@ -80,7 +94,7 @@
               <span class="post-meta">Jan 25, 2026</span>
               <span class="post-description">&nbsp;&nbsp;Reciprocity, capital markets and governance </span>
             </p>
-            <img class="post-image" src="/assets/img/kula-ring-map.jpg" />
+            <img class="post-image" src="/assets/img/posts/i/kula-ring-map.jpg" />
           </div>
         </a>
       </li></ul>
@@ -202,8 +216,8 @@
     <div class="footer-col-wrapper">
         <ul class="contact-list">
           <li class="p-name">
-              <a href="https://twitter.com/ops@focal.org">
-                @ops@focal.org
+              <a href="https://twitter.com/focaldotorg">
+                @focaldotorg
               </a>
             </li>
           </ul>

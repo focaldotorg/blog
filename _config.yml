@@ -4,7 +4,7 @@ description: "collective commentary"
 url: https://blog.focal.org
 baseurl: ""
 author:
-  name: ops@focal.org
+  name: focaldotorg
 
 lang: en-IE
 locale: en_IE
