@@ -96,6 +96,9 @@ To showcase the model we define four strategies; Singleton, Splitting, Dynamic a
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)">
   <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg">
+  <center>
+  <p><i>Strategy breakdown</i></p>
+  </center>
 </picture>
 
 To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, labelled as the **power ratio**. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. 
@@ -106,6 +109,9 @@ Furthermore, we apply logarithmic time for depreciating returns across the votin
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)">
   <img src="assets/img/posts/i/pv_strategies_light.svg">
+  <center>
+  <p><i>Strategy benchmark</i></p>
+  </center>
 </picture>
 
 

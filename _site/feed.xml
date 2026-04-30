@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-IE"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-IE" /><updated>2026-04-30T03:41:00+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>collective commentary</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-IE"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-IE" /><updated>2026-04-30T03:44:35+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>collective commentary</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
 
 <p>Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity.</p>
 
@@ -83,6 +83,9 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)" />
   <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" />
+  <center>
+  <p><i>Strategy breakdown</i></p>
+  </center>
 </picture>
 
 <p>To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled as the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller.</p>
@@ -92,6 +95,9 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)" />
   <img src="assets/img/posts/i/pv_strategies_light.svg" />
+  <center>
+  <p><i>Strategy benchmark</i></p>
+  </center>
 </picture>
 
 <p>A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
