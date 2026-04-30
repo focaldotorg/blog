@@ -6,6 +6,31 @@
   "minima/skins/classic",
   "minima/initialize";
 
+.img-frame {
+  position: relative;
+  display: inline-block;
+}
+
+.img-frame img {
+  position: relative;
+  z-index: 1;
+  display: block;
+}
+
+.img-frame::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: calc(100% + 48px);
+  height: calc(100% + 48px);
+
+  background-color: var(--color-basis);
+  z-index: 0;
+}
+
 :root {
   --color-basis: #ffffff;
   --color-primary: #000000;
