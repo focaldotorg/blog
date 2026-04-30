@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-IE"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-IE" /><updated>2026-04-30T03:58:00+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">focal</title><subtitle>collective commentary</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="http://localhost:4000/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>http://localhost:4000/the-mathematics-of-loyalty</id><content type="html" xml:base="http://localhost:4000/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-IE"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://blog.focal.org/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.focal.org/" rel="alternate" type="text/html" hreflang="en-IE" /><updated>2026-04-30T16:28:01+01:00</updated><id>https://blog.focal.org/feed.xml</id><title type="html">focal</title><subtitle>collective commentary</subtitle><author><name>focaldotorg</name></author><entry><title type="html">The Mathematics of Loyalty</title><link href="https://blog.focal.org/the-mathematics-of-loyalty" rel="alternate" type="text/html" title="The Mathematics of Loyalty" /><published>2026-01-25T00:00:00+00:00</published><updated>2026-01-25T00:00:00+00:00</updated><id>https://blog.focal.org/the-mathematics-of-loyalty</id><content type="html" xml:base="https://blog.focal.org/the-mathematics-of-loyalty"><![CDATA[<h2 id="kula-ring">Kula ring</h2>
 
 <p>Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity.</p>
 
@@ -68,39 +68,37 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 
 <p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as systems with multiple groups or centres of authority. On the contrary to monocentrism, where there is only one.</p>
 
-<p>Plutocracy’s intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
+<p>Plutocracy’s intent was always to be polycentric but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
 
 <p><em>What if time itself determines the balance between quadratic and linear weighting?</em></p>
 
 <p>This is exactly the basis behind a new voting model for capital markets we designed known as <a href="">Polycentric voting</a>, where time is introduced as an additional domain for authority past capital.</p>
 
-<p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
+<p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight ($t_{\text{effective}}$)</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
+
+\[t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}\]
 
 <p>Within this we propose a new quantitative model for modelling <strong>tenure</strong>, by formalising path-dependency as the variance of an actors time weight we get a distinctive map of the trajectory of their commitment, with  tenure being the slope of that curvature. Providing a distinctive profile of stakeholders behaviour regardless of stake.</p>
 
-<p>To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
+<p>Lets define four strategies for analysis; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)" />
-  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" />
-  <center>
-  <p><i>Strategy breakdown</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" title="Strategy breakdown" />
 </picture>
 
-<p>To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled as the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller.</p>
-
-<p>Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
+<p>In dampening concentrations of votes asbent of commitment (empty), we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, the  <strong>power ratio ($\alpha$)</strong>. Resulting the temporal saturation of larger actors and broader representation of the sum parts to those of the smaller.</p>
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)" />
-  <img src="assets/img/posts/i/pv_strategies_light.svg" />
-  <center>
-  <p><i>Strategy benchmark</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark" />
 </picture>
 
-<p>A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
+<p>Which leads us to define <strong>voting power ($V_P$)</strong>  of any stakeholder as:</p>
+
+\[V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}\]
+
+<p>A inherent byproduct being Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
 
 <h2 id="collectivism">Collectivism</h2>
 
@@ -132,4 +130,4 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
       <p>Douceur, J.R., <em>The Sybil Attack</em> (2002), Microsoft Research <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name>Samuel J. Gosling</name></author><summary type="html"><![CDATA[Reciprocity, capital markets and governance]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/posts/i/kula-ring-map.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/posts/i/kula-ring-map.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</div>]]></content><author><name>Samuel J. Gosling</name></author><summary type="html"><![CDATA[Reciprocity, capital markets and governance]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://blog.focal.org/assets/img/posts/i/kula-ring-map.jpg" /><media:content medium="image" url="https://blog.focal.org/assets/img/posts/i/kula-ring-map.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
