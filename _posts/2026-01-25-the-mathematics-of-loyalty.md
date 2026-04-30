@@ -87,11 +87,15 @@ _What if time itself determines the balance between quadratic and linear weighti
 
 This is exactly the basis behind a new voting model for capital markets we designed known as [Polycentric voting](), where time is introduced as an additional domain for authority past capital. 
 
-Following in precedent to the flaws of past attempts, we introduce the concept of **effective time weight**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+Following in precedent to the flaws of past attempts, we introduce the concept of **effective time weight ($t_{\text{effective}}$)**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+
+$$
+t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}
+$$
 
 Within this we propose a new quantitative model for modelling **tenure**, by formalising path-dependency as the variance of an actors time weight we get a distinctive map of the trajectory of their commitment, with  tenure being the slope of that curvature. Providing a distinctive profile of stakeholders behaviour regardless of stake.
 
-To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:
+Lets define four strategies for analysis; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)">
@@ -101,10 +105,7 @@ To showcase the model we define four strategies; Singleton, Splitting, Dynamic a
   </center>
 </picture>
 
-To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, labelled as the **power ratio**. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. 
-
-Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as **power tranches**; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.
-
+In dampening concentrations of votes asbent of commitment (empty), we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, the  **power ratio ($\alpha$)**.
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)">
@@ -114,9 +115,11 @@ Furthermore, we apply logarithmic time for depreciating returns across the votin
   </center>
 </picture>
 
+Which leads us to define **voting power ($V_P$)**  of any stakeholder as:
 
+$$V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}$$
 
-A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
+Resulting in the temporal saturation of larger actors and broader representation of the sum parts to those of the smaller.  A inherent byproduct being Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
 
 ## Collectivism
 
