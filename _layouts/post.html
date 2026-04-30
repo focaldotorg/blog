@@ -55,7 +55,8 @@ layout: default
     var ov = document.createElement('div');
 
     ov.className = 'img-overlay';
-    ov.innerHTML = '<span class="img-overlay-close">✕</span><img>';
+    ov.innerHTML = '<span class="img-overlay-close">✕</span><div class="img-frame"><img></div>';
+
     document.body.appendChild(ov);
 
     var ovImg = ov.querySelector('img');
@@ -83,7 +84,14 @@ layout: default
 
       img.addEventListener('click', function(){
         if(window.innerWidth < 768) return;
-        ovImg.src = img.src;
+
+        const picture = img.closest('picture');
+        const source = picture && picture.querySelector('source');
+
+        ovImg.src = (source && window.matchMedia(source.media).matches)
+          ? source.getAttribute('srcset')
+          : img.src;
+
         ov.classList.add('active');
         document.body.style.overflow = 'hidden';
       });

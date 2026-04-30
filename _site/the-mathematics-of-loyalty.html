@@ -182,13 +182,25 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 
 <p>To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
 
-<p><img src="assets/img/posts/i/pv_strategy_breakdown.png" alt="Strategy overview" title="Strategy overview" /></p>
+<picture>
+  <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)" />
+  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" />
+  <center>
+  <p><i>Strategy breakdown</i></p>
+  </center>
+</picture>
 
 <p>To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled as the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller.</p>
 
 <p>Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
 
-<p><img src="assets/img/posts/i/pv_strategy_benchmark.png" alt="Strategy benchmark" title="Strategy benchmark" /></p>
+<picture>
+  <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)" />
+  <img src="assets/img/posts/i/pv_strategies_light.svg" />
+  <center>
+  <p><i>Strategy benchmark</i></p>
+  </center>
+</picture>
 
 <p>A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
 
@@ -240,7 +252,8 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
     var ov = document.createElement('div');
 
     ov.className = 'img-overlay';
-    ov.innerHTML = '<span class="img-overlay-close">✕</span><img>';
+    ov.innerHTML = '<span class="img-overlay-close">✕</span><div class="img-frame"><img></div>';
+
     document.body.appendChild(ov);
 
     var ovImg = ov.querySelector('img');
@@ -268,7 +281,14 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 
       img.addEventListener('click', function(){
         if(window.innerWidth < 768) return;
-        ovImg.src = img.src;
+
+        const picture = img.closest('picture');
+        const source = picture && picture.querySelector('source');
+
+        ovImg.src = (source && window.matchMedia(source.media).matches)
+          ? source.getAttribute('srcset')
+          : img.src;
+
         ov.classList.add('active');
         document.body.style.overflow = 'hidden';
       });

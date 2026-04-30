@@ -93,13 +93,28 @@ Within this we propose a new quantitative model for modelling **tenure**, by for
 
 To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:
 
-![Strategy overview](assets/img/posts/i/pv_strategy_breakdown.png "Strategy overview")
+<picture>
+  <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg">
+  <center>
+  <p><i>Strategy breakdown</i></p>
+  </center>
+</picture>
 
 To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, labelled as the **power ratio**. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller. 
 
 Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as **power tranches**; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.
 
-![Strategy benchmark](assets/img/posts/i/pv_strategy_benchmark.png "Strategy benchmark")
+
+<picture>
+  <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)">
+  <img src="assets/img/posts/i/pv_strategies_light.svg">
+  <center>
+  <p><i>Strategy benchmark</i></p>
+  </center>
+</picture>
+
+
 
 A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
 
