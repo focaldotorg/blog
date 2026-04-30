@@ -1,0 +1,240 @@
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script type="module">
+
+const breakpoints = {
+  widescreen: {
+    offset: 25,
+    x: 0.35,
+    y: 0.6,
+    arc1: {
+      radius: 250,
+      padding: 100
+    },
+    arc2: {
+      radius: 50,
+      padding: 30
+    }
+  },
+  desktop: {
+    offset: 25,
+    x: 0.6,
+    y: 0.6,
+    arc1: {
+      radius: 250,
+      padding: 100
+    },
+    arc2: {
+      radius: 75,
+      padding: 30
+    }
+  },
+  mobile: {
+    offset: 0,
+    x: 0.85,
+    y: 0.6,
+    arc1: {
+      radius: 150,
+      padding: 70
+    },
+    arc2: {
+      radius: 0,
+      padding: 30
+    }
+  }
+};
+
+const data = {
+  children: [
+    { name: "Governance", type: "category",
+     children: [
+       { name: "Item 1.1", type: "item" },
+       { name: "Item 1.2", type: "item" },
+       { name: "Item 1.3", type: "item" }
+     ] },
+    { name: "P2P", type: "category",
+     children: [
+       { name: "Item 2.1", type: "item" },
+      { name: "Item 2.2", type: "item" }
+    ] },
+    { name: "Economics", type: "category",
+     children: [
+       { name: "Item 3.1", type: "item" },
+       { name: "Item 3.2", type: "item" },
+       { name: "Item 3.3", type: "item" },
+       { name: "Item 3.4", type: "item" },
+       { name: "Item 3.5", type: "item" }
+
+     ] },
+    // Add more categories and items as needed...
+  ]
+};
+
+const canvas = document.getElementById("menu-canvas");
+
+var { x, y, arc1, arc2, offset } = selectBreakpoints();
+var width = arc1.radius * 2;
+var height = arc1.radius * 2;
+
+  // Define SVG container
+var svg = d3.select(canvas)
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", `translate(${width / 2}, ${height / 2})`);
+
+var partition = d3.partition()
+    .size([2 * Math.PI, arc1.radius ]);
+
+var label;
+
+function renderGraph() {
+  var arc = d3.arc()
+    .startAngle(function(d) { return d.x0; })
+    .endAngle(function(d) { return d.x1; })
+    .innerRadius(function(d) {
+    return d.data.type === "item" ? d.y0 - arc2.padding : d.y0 + arc1.padding  ; // Increase inner radius for categories
+  })
+  .outerRadius(function(d) {
+    return d.data.type === "item" ? d.y1 - arc1.padding  : d.y1 + arc2.padding ; // Decrease outer radius for items
+  });
+
+  var root = d3.hierarchy(data)
+    .sum(function(d) { return d.type === "item" ? 1 : 0; });
+
+  partition(root);
+
+  root.each(function(d) {
+    if (d.children) { // if the node is an outer node
+        d.y1 -= '0.05';
+    }
+  });
+
+  // Draw arcs
+  var arcs = svg.selectAll("path")
+    .data(root.descendants().filter(function(d) { return d.depth; })) // filter out the root node
+    .enter().append("path")
+    .attr("d", arc)
+    .attr("id", function(d, i) { return "arc-" + i; })          .style("fill", "white")
+    .style("stroke", "black") // set stroke color
+    .style("stroke-width", "2"); // set stroke width
+
+  var centerArc = d3.arc()
+    .startAngle(0)
+    .endAngle(2 * Math.PI)
+    .innerRadius(0) // adjust this value to increase/decrease the inner radius
+    .outerRadius(arc2.radius); // adjust this val
+
+  svg.append("path")
+    .attr("d", centerArc())
+    .style("fill", "white")
+    .style("stroke", "black") // set stroke color
+    .style("stroke-width", "2"); // set stroke width
+
+  label = svg.append("text")
+    .attr("text-anchor", "middle")
+    .style("fill", "black")
+    .attr("dy", ".35em");
+
+  var labels = svg.selectAll(null)
+    .data(root.descendants().filter(function(d) { return d.data.type == "category"; }))
+    .enter().append("text")
+    .attr("dy", -25) // adjust this value to position the text vertically
+    .append("textPath")
+    .style("fill", "black")
+    .attr("xlink:href", function(d, i) { return "#arc-" + i; })
+    .attr("startOffset", "50px")
+    .text(function(d) { return d.data.name; });
+}
+
+var prevParentElement;
+var prevChildElement;
+
+// Handle mousemove events
+function orientateGraph(event, d) {
+
+  // Calculate rotation based on mouse position
+  var dx = event.pageX - width * 2; // Adjust as needed
+  var dy = event.pageY - height; // Adjust as needed
+  var rotation = Math.atan2(dy, dx) * 360 / Math.PI;
+
+  // Update the rotation of the SVG container
+  svg.attr("transform", `translate(${width / 2}, ${height / 2}) rotate(${rotation})`);
+  label.attr("transform", "rotate(" + (-rotation) + ")");
+
+  // Calculate the center of the SVG container
+
+  var box = canvas.getBoundingClientRect();
+
+  // Use trigonometry to calculate the coordinates of the top of the menu
+  var centerX = box.x + box.width / 2;
+  var centerY = box.y + box.height / 2;
+
+  var rounding = 10;
+  var offsetY = arc2.padding - arc1.padding + offset;
+
+  var menuTopX = centerX;
+  var menuTopY = centerY - arc1.radius + arc1.padding;
+
+  var childElement = document.elementFromPoint(menuTopX, menuTopY);
+  var parentElement = document.elementFromPoint(menuTopX, menuTopY + offsetY);
+
+  console.log(childElement);
+
+  var data = d3.select(childElement).datum();
+
+  // Get category and item
+  var category, item;
+  if (data) {
+    item = data.data.name;
+    category = data.parent ? data.parent.data.name : null;
+
+    label.text(item);
+  }
+
+  d3.select(childElement).style("fill", "black"); // change to desired selection color
+  d3.select(parentElement).style("fill", "black"); // change to desired selection color
+
+  if (prevChildElement != childElement) {
+    d3.select(prevChildElement).style("fill", "white");
+  } if (prevParentElement != parentElement) {
+    d3.select(prevParentElement).style("fill", "white");
+  }
+
+  // Store current element as previously selected element for next selection
+  prevChildElement = childElement;
+  prevParentElement = parentElement;
+}
+
+function resizeGraph() {
+    var { arc1, offset } = selectBreakpoints();
+    width = arc1.radius * 2;
+    height = arc1.radius * 2;
+
+    svg.attr("transform", "translate(" + width / 2  + "," + height / 2 + ")")
+      .attr("height", height)
+      .attr("width", width);
+
+    // Update the partition layout size
+    partition.size([2 * Math.PI, arc1.radius ]);
+}
+
+function selectBreakpoints() {
+  const windowHeight = window.innerHeight;
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth > 1920 && windowHeight > 1080) {
+    return { ...breakpoints.widescreen };
+  } else if (windowWidth > 1000) {
+    return { ...breakpoints.desktop };
+  } else {
+    return { ...breakpoints.mobile };
+  }
+}
+
+document.addEventListener('DOMContentLoaded', renderGraph);
+window.addEventListener('resize', resizeGraph, false);
+d3.select(window).on('mousemove', orientateGraph);
+
+</script>
+

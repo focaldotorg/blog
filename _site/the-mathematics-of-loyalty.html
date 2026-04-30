@@ -15,20 +15,20 @@
 <meta property="og:locale" content="en_IE" />
 <meta name="description" content="Reciprocity, capital markets and governance" />
 <meta property="og:description" content="Reciprocity, capital markets and governance" />
-<link rel="canonical" href="https://blog.focal.org/the-mathematics-of-loyalty" />
-<meta property="og:url" content="https://blog.focal.org/the-mathematics-of-loyalty" />
+<link rel="canonical" href="http://localhost:4000/the-mathematics-of-loyalty" />
+<meta property="og:url" content="http://localhost:4000/the-mathematics-of-loyalty" />
 <meta property="og:site_name" content="focal" />
-<meta property="og:image" content="https://blog.focal.org/assets/img/posts/i/kula-ring-map.jpg" />
+<meta property="og:image" content="http://localhost:4000/assets/img/posts/i/kula-ring-map.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-01-25T00:00:00+00:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://blog.focal.org/assets/img/posts/i/kula-ring-map.jpg" />
+<meta property="twitter:image" content="http://localhost:4000/assets/img/posts/i/kula-ring-map.jpg" />
 <meta property="twitter:title" content="The Mathematics of Loyalty" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Samuel J. Gosling"},"dateModified":"2026-01-25T00:00:00+00:00","datePublished":"2026-01-25T00:00:00+00:00","description":"Reciprocity, capital markets and governance","headline":"The Mathematics of Loyalty","image":"https://blog.focal.org/assets/img/posts/i/kula-ring-map.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.focal.org/the-mathematics-of-loyalty"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://blog.focal.org/assets/img/favicon.svg"},"name":"Samuel J. Gosling"},"url":"https://blog.focal.org/the-mathematics-of-loyalty"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Samuel J. Gosling"},"dateModified":"2026-01-25T00:00:00+00:00","datePublished":"2026-01-25T00:00:00+00:00","description":"Reciprocity, capital markets and governance","headline":"The Mathematics of Loyalty","image":"http://localhost:4000/assets/img/posts/i/kula-ring-map.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/the-mathematics-of-loyalty"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/img/favicon.svg"},"name":"Samuel J. Gosling"},"url":"http://localhost:4000/the-mathematics-of-loyalty"}</script>
 <!-- End Jekyll SEO tag -->
 
-  <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://blog.focal.org/feed.xml" title="focal" />
+  <link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="focal" />
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
@@ -170,39 +170,37 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
 
 <p>Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 <a href="https://en.wikipedia.org/wiki/Michael_Polanyi">Micheal Polanyi</a> theorised the thesis of polycentrism; which is defined as systems with multiple groups or centres of authority. On the contrary to monocentrism, where there is only one.</p>
 
-<p>Plutocracy’s intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
+<p>Plutocracy’s intent was always to be polycentric but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.</p>
 
 <p><em>What if time itself determines the balance between quadratic and linear weighting?</em></p>
 
 <p>This is exactly the basis behind a new voting model for capital markets we designed known as <a href="">Polycentric voting</a>, where time is introduced as an additional domain for authority past capital.</p>
 
-<p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
+<p>Following in precedent to the flaws of past attempts, we introduce the concept of <strong>effective time weight ($t_{\text{effective}}$)</strong>; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions.</p>
+
+\[t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}\]
 
 <p>Within this we propose a new quantitative model for modelling <strong>tenure</strong>, by formalising path-dependency as the variance of an actors time weight we get a distinctive map of the trajectory of their commitment, with  tenure being the slope of that curvature. Providing a distinctive profile of stakeholders behaviour regardless of stake.</p>
 
-<p>To showcase the model we define four strategies; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
+<p>Lets define four strategies for analysis; Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:</p>
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)" />
-  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" />
-  <center>
-  <p><i>Strategy breakdown</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" title="Strategy breakdown" />
 </picture>
 
-<p>To saturate concentrations of power lacking tenure, we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, labelled as the <strong>power ratio</strong>. Resulting in the temporal saturation of larger stakeholders and broader representation of the sum parts to those of the smaller.</p>
-
-<p>Furthermore, we apply logarithmic time for depreciating returns across the voting power curve at key stages, complimentary to what is denoted as <strong>power tranches</strong>; which are normalised phases of growth which create tiered demographics to promote coalition building for polycentric decision-making.</p>
+<p>In dampening concentrations of votes asbent of commitment (empty), we introduce a novel weighting mechanism; a composite weight composed of “quadratic” and linear ruling that deviates with time to purely linear, the  <strong>power ratio ($\alpha$)</strong>. Resulting the temporal saturation of larger actors and broader representation of the sum parts to those of the smaller.</p>
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)" />
-  <img src="assets/img/posts/i/pv_strategies_light.svg" />
-  <center>
-  <p><i>Strategy benchmark</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark" />
 </picture>
 
-<p>A byproduct of the temporal but composite weighting scheme is Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
+<p>Which leads us to define <strong>voting power ($V_P$)</strong>  of any stakeholder as:</p>
+
+\[V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}\]
+
+<p>A inherent byproduct being Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with <strong>a 50% loss in aggregated voting power</strong> in comparison to the Singleton strategy.</p>
 
 <h2 id="collectivism">Collectivism</h2>
 
@@ -285,7 +283,7 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
         const picture = img.closest('picture');
         const source = picture && picture.querySelector('source');
 
-        ovImg.src = (source && window.matchMedia(source.media).matches)
+        ovImg.src = (source && document.documentElement.getAttribute('data-theme') === 'dark')
           ? source.getAttribute('srcset')
           : img.src;
 
@@ -297,6 +295,13 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
     window.addEventListener('load', () => {
       const footnotes = document.querySelector(".footnotes");
       const target = document.querySelector("#ref-section");
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+      document.querySelectorAll('picture').forEach(function(picture) {
+        const source = picture.querySelector('source');
+        const img = picture.querySelector('img');
+        if (source && img && isDark) img.src = source.getAttribute('srcset');
+      });
 
       if (footnotes && target) {
         target.appendChild(footnotes);

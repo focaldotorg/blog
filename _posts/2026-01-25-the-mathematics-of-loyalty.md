@@ -81,7 +81,7 @@ Fast forward to the 21st century and there has been a reignition in voting inspi
 
 Looking back at Kula ring and comparing it to corporate governance, the ancient exchange system had multiple degrees of authority such as time and commitment (accumulated through reciprocity; gifts, trading, marital agreements etc), whereas shareholder governance only has capital to equate to power. In 1951 [Micheal Polanyi](https://en.wikipedia.org/wiki/Michael_Polanyi) theorised the thesis of polycentrism; which is defined as systems with multiple groups or centres of authority. On the contrary to monocentrism, where there is only one.
 
-Plutocracy's intent was always polycentrism but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.
+Plutocracy's intent was always to be polycentric but often falls ill to the strifes of capitalism that it never achieves a flat organisational structure and usually conforms to a traditional hierarchy. The Kula ring is inherently polycentric not only because of the multiple degrees a participant must enact to gain authority but because the system is governed and established by the dozen of archipelago chiefs, no single actor has complete control or can shift the dynamics of the system alone.
 
 _What if time itself determines the balance between quadratic and linear weighting?_
 
@@ -99,27 +99,21 @@ Lets define four strategies for analysis; Singleton, Splitting, Dynamic and Sequ
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategy_breakdown_dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg">
-  <center>
-  <p><i>Strategy breakdown</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategy_breakdown_light.svg" title="Strategy breakdown">
 </picture>
 
-In dampening concentrations of votes asbent of commitment (empty), we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, the  **power ratio ($\alpha$)**.
+In dampening concentrations of votes asbent of commitment (empty), we introduce a novel weighting mechanism; a composite weight composed of "quadratic" and linear ruling that deviates with time to purely linear, the  **power ratio ($\alpha$)**. Resulting the temporal saturation of larger actors and broader representation of the sum parts to those of the smaller. 
 
 <picture>
   <source srcset="assets/img/posts/i/pv_strategies_dark.svg" media="(prefers-color-scheme: dark)">
-  <img src="assets/img/posts/i/pv_strategies_light.svg">
-  <center>
-  <p><i>Strategy benchmark</i></p>
-  </center>
+  <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark">
 </picture>
 
 Which leads us to define **voting power ($V_P$)**  of any stakeholder as:
 
 $$V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}$$
 
-Resulting in the temporal saturation of larger actors and broader representation of the sum parts to those of the smaller.  A inherent byproduct being Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
+ A inherent byproduct being Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
 
 ## Collectivism
 
