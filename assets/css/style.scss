@@ -703,6 +703,22 @@ figcaption {
   color: var(--color-highlight);
 }
 
+@media (min-width: 1920px) {
+ 
+   .toc li { 
+     margin-left: 0px !important;
+   }
+
+}
+
+@media (max-width: 1280px) { 
+
+  .toc li { 
+    margin-left: -6px;
+  }
+
+}
+
 @media (max-width: 1024px) {
 
   .nav-back-btn {
