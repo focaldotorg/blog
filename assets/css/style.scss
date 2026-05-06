@@ -703,10 +703,10 @@ figcaption {
   color: var(--color-highlight);
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1919px) {
  
    .toc li { 
-     margin-left: 0px !important;
+     margin-left: -1.5px !important;
    }
 
 }
