@@ -88,12 +88,7 @@
         setTimeout(function() { MicroModal.close('ml-modal'); }, 2200);
       })
       .catch(function(err) {
-        console.error(err);
-        if (err.code === 'permission-denied') {
-          status.textContent = 'Already registered.';
-        } else {
-          status.textContent = 'Something went wrong. Try again.';
-        }
+        status.textContent = 'Something went wrong, try again.';
         status.className = 'error';
       })
       .finally(function() {
