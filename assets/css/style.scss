@@ -460,6 +460,7 @@ figcaption {
   border-radius: 0;
   transform: none;
   top: 4px;
+  margin-left: -1.5px;
   color: var(--color-peripheral);
 }
 
@@ -703,17 +704,9 @@ figcaption {
   color: var(--color-highlight);
 }
 
-@media (min-width: 1919px) {
- 
-   .toc li { 
-     margin-left: -1.5px !important;
-   }
-
-}
-
 @media (max-width: 1280px) { 
 
-  .toc li { 
+  .toc li::before { 
     margin-left: -6px;
   }
 
