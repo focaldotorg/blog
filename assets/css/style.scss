@@ -704,18 +704,12 @@ figcaption {
   color: var(--color-highlight);
 }
 
-@media (max-width: 1800px) { 
-
-  .toc li::before { 
-    margin-left: -2.5px;
+@media (max-width: 1580px) {
+  
+  .toc li::before {
+    margin-left: -6.5px;
   }
 
-}
-
-@media (max-width: 1600px) {
-    .toc li::before {
-        margin-left: -2px;
-    }
 }
 
 @media (max-width: 1024px) {
