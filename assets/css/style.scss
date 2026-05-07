@@ -41,6 +41,7 @@
   --color-contrast: #111111;
   --color-quote: #e8e8e8;
   --color-highlight: #2a7ae2;
+  --color-warning: #e2362a;
 
   --site-logo: url('../img/logo-default.png');
   --cursor-default: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAyOSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc1IDBWNC43NUgyOVY2LjI1SDE1Ljc1VjExSDE0LjI1VjYuMjVIMFY0Ljc1SDE0LjI1VjBIMTUuNzVaIiBmaWxsPSJibGFjayIvPgo8L3N2Zz4K');
@@ -57,6 +58,8 @@
   --color-contrast: #ffffff;
   --color-quote: #6f6f6f;
   --color-highlight: #ffc760;
+  --color-warning: #ff4d2d;
+
 
   --site-logo: url('../img/logo-dark.png');
   --cursor-default: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAyOSAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE1Ljc1IDBWNC43NUgyOVY2LjI1SDE1Ljc1VjExSDE0LjI1VjYuMjVIMFY0Ljc1SDE0LjI1VjBIMTUuNzVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K');
@@ -388,7 +391,7 @@ figcaption {
 .toc {
   position: absolute;
   top: 0;
-  left: calc(10% - 260px);
+  left: calc(10% - 180px);
   height: 100%;
   width: 360px;
   font-family: 'Wermut', serif;
@@ -405,7 +408,7 @@ figcaption {
 .toc ul::before {
   content: '';
   position: absolute;
-  left: 20%;
+  left: 0;
   top: 0;
   bottom: 0;
   border-left: 3px solid var(--color-peripheral);
@@ -413,14 +416,13 @@ figcaption {
 
 .toc li {
   position: relative;
-  padding-left: calc(20% + 24px);
 }
 
 .toc a {
   text-decoration: none;
   color: var(--color-peripheral);
   display: block;
-  padding: 4px 0;
+  padding: 4px 0px 0px 20px;
 }
 
 .site-footer .footer-col-wrapper {
@@ -451,13 +453,14 @@ figcaption {
 .toc li::before {
   content: '❙';
   position: absolute;
-  left: 72px;
+  left: 0;
   background: none;
   width: auto;
   height: auto;
   border-radius: 0;
   transform: none;
   top: 4px;
+  margin-left: -1.5px;
   color: var(--color-peripheral);
 }
 
@@ -694,11 +697,19 @@ figcaption {
 }
 
 #ml-status.error {
-  color: #c00;
+  color: var(--color-warning);
 }
 
 #ml-status.success {
-  color: #000;
+  color: var(--color-highlight);
+}
+
+@media (max-width: 1500px) {
+  
+  .toc li::before {
+    margin-left: -6.5px;
+  }
+
 }
 
 @media (max-width: 1024px) {

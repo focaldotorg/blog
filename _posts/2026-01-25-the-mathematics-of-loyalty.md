@@ -87,7 +87,7 @@ _What if time itself determines the balance between quadratic and linear weighti
 
 This is exactly the basis behind a new voting model for capital markets we designed known as [Polycentric voting](), where time is introduced as an additional domain for authority past capital. 
 
-Following in precedent to the flaws of past attempts, we introduce the concept of **effective time weight ($t_{\text{effective}}$)**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+Following in precedent to the flaws of past attempts, we introduce the concept of **effective time ($t_{\text{effective}}$)**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
 
 $$
 t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}
