@@ -1196,6 +1196,7 @@ figcaption {
   border-radius: 0;
   transform: none;
   top: 4px;
+  margin-left: -1.5px;
   color: var(--color-peripheral);
 }
 
@@ -1435,6 +1436,11 @@ figcaption {
   color: var(--color-highlight);
 }
 
+@media (max-width: 1500px) {
+  .toc li::before {
+    margin-left: -6.5px;
+  }
+}
 @media (max-width: 1024px) {
   .nav-back-btn {
     display: none;

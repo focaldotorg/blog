@@ -6,7 +6,7 @@ permalink: the-mathematics-of-loyalty
 image: /assets/img/posts/i/kula-ring-map.jpg
 keywords: "insitutional governance, plutocracy, polycentrism, polycentric voting, polycentricity, kula ring, gift economies, power indices, game theory"
 description: "Reciprocity, capital markets and governance"
-date: "25/01/2026"
+date: "11/05/2026"
 ---
 
 ## Kula ring
