@@ -989,9 +989,12 @@ h6 {
 }
 
 .site-header {
+  margin-top: 10px;
   border-top: none;
   padding-bottom: 5px;
   border-bottom: none;
+  margin-left: 13px;
+  margin-right: 13px;
 }
 
 .site-footer {
@@ -1448,6 +1451,10 @@ figcaption {
   }
 }
 @media (max-width: 1024px) {
+  .site-header {
+    margin-left: -2px;
+    margin-right: 0px;
+  }
   .nav-back-btn {
     display: none;
   }
