@@ -11,7 +11,7 @@ date: "11/05/2026"
 
 ## Kula ring
 
-Humans since the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity. 
+Humans sinc/var/folders/6k/8f2fg9nn54g3496rgcp7xfp40000gn/T/iTerm2.CdNL9h e the dawn of early intelligence have operated or retaliated through relationships derived from reoccurring experiences. The measure of how frequent, and how positive or negative interactions are, shape what we call trust between parties of any relationship, which function constructively through reciprocity. 
 
 ![Map of the Kula ring](assets/img/posts/i/kula-ring-map.jpg "Map of the Kula ring")
 
@@ -109,7 +109,7 @@ In dampening concentrations of votes asbent of commitment (empty), we introduce 
   <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark">
 </picture>
 
-Which leads us to define **voting power ($V_P$)**  of any stakeholder as:
+Which leads us to/var/folders/6k/8f2fg9nn54g3496rgcp7xfp40000gn/T/iTerm2.1ZY0PH  define **voting power ($V_P$)**  of any stakeholder as:
 
 $$V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}$$
 
