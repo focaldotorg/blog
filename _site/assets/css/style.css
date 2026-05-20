@@ -855,7 +855,6 @@ a:hover {
 
 a::selection {
   background-color: var(--color-highlight);
-  color: var(--color-primary);
 }
 
 mjx-math {
