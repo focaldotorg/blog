@@ -120,6 +120,12 @@ a::selection {
   background-color: var(--color-highlight);
 }
 
+*:focus,
+*:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 mjx-math {
   white-space: normal !important;
   line-height: normal !important;
