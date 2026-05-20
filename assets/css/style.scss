@@ -120,6 +120,10 @@ a::selection {
   background-color: var(--color-highlight);
 }
 
+input[type="checkbox"] {
+  background-color: var(--color-highlight);
+}
+
 *:focus,
 *:focus-visible {
   outline: none;
