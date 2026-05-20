@@ -306,53 +306,64 @@ $T_{new} = L_{new} / M_{total} = 32.94 / 52 = 0.63$</p>
       if (footnotes && target) {
         target.appendChild(footnotes);
       }
-      if (window.innerWidth > 1024) {
-        const headings = document.querySelectorAll('.post-content h2, .post-content h3');
-        const tocList = document.getElementById('toc-list');
-        const postContent = document.querySelector('.post-content');
-        const postTop = postContent.offsetTop;
-        const toc = document.querySelector('.toc');
-        const wrapper = document.querySelector('.post-wrapper');
-        const postHeight = wrapper.offsetHeight;
+if (window.innerWidth > 1024) {
+  const headings = document.querySelectorAll('.post-content h2, .post-content h3');
+  const tocList = document.getElementById('toc-list');
+  const postContent = document.querySelector('.post-content');
+  const postTop = postContent.offsetTop;
+  const toc = document.querySelector('.toc');
+  const wrapper = document.querySelector('.post-wrapper');
+  const postHeight = wrapper.offsetHeight;
 
-        toc.style.height = `${postHeight}px`;
-        tocList.style.height = `${postHeight}px`;
+  toc.style.height = `${postHeight}px`;
+  tocList.style.height = `${postHeight}px`;
 
-        headings.forEach(heading => {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
+  headings.forEach(heading => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = `#${heading.id}`;
+    a.textContent = heading.textContent;
+    if (heading.tagName === 'H3') li.classList.add('sub');
+    const relativePos = (heading.offsetTop - postTop) / postHeight * 100;
+    li.style.position = 'absolute';
+    li.style.top = `${Math.max(0, relativePos)}%`;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
 
-          a.href = `#${heading.id}`;
-          a.textContent = heading.textContent;
+  tocList.style.position = 'relative';
 
-          if (heading.tagName === 'H3') li.classList.add('sub');
-          const relativePos = (heading.offsetTop - postTop) / postHeight * 100;
-
-          li.style.position = 'absolute';
-          li.style.top = `${Math.max(0, relativePos)}%`;
-          li.appendChild(a);
-          tocList.appendChild(li);
-        });
-
-        tocList.style.position = 'relative';
-
-        window.addEventListener('scroll', () => {
-          headings.forEach(heading => {
-            const top = heading.getBoundingClientRect().top;
-
-            if (top < 600) {
-              document.querySelectorAll('.toc a').forEach(a => a.classList.remove('active'));
-              document.querySelectorAll('.toc li').forEach(li => li.classList.remove('active'));
-              const activeLink = document.querySelector(`.toc a[href="#${heading.id}"]`);
-
-              if (activeLink) {
-                activeLink.classList.add('active');
-                activeLink.parentElement.classList.add('active');
-              }
-            }
-          });
-        });
+  // ✅ Extract into a named function so it can be called on load and on scroll
+  function updateActiveHeading() {
+    let activeHeading = null;
+    headings.forEach(heading => {
+      if (heading.getBoundingClientRect().top < 600) {
+        activeHeading = heading;
       }
+    });
+
+    document.querySelectorAll('.toc a').forEach(a => a.classList.remove('active'));
+    document.querySelectorAll('.toc li').forEach(li => li.classList.remove('active'));
+
+    if (activeHeading) {
+      const activeLink = document.querySelector(`.toc a[href="#${activeHeading.id}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+        activeLink.parentElement.classList.add('active');
+      }
+    } else {
+      // ✅ Nothing has scrolled past the threshold — activate the first item by default
+      const firstLink = tocList.querySelector('a');
+      if (firstLink) {
+        firstLink.classList.add('active');
+        firstLink.parentElement.classList.add('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateActiveHeading);
+  updateActiveHeading(); // ✅ Run once immediately on load
+}
     });
   </script>
 </article>
