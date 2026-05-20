@@ -853,6 +853,11 @@ a:hover {
   color: var(--color-basis);
 }
 
+a::selection {
+  background-color: var(--color-highlight);
+  color: var(--color-primary);
+}
+
 mjx-math {
   white-space: normal !important;
   line-height: normal !important;
