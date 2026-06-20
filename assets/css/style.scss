@@ -116,6 +116,29 @@ a:hover {
   color: var(--color-basis);
 }
 
+a::selection {
+  background-color: var(--color-highlight);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px var(--color-contrast) inset !important;
+  -webkit-text-fill-color: var(--color-highlight) !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--color-highlight);
+}
+
+*:focus,
+*:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
 mjx-math {
   white-space: normal !important;
   line-height: normal !important;
@@ -130,7 +153,7 @@ blockquote {
 }
 
 body {
-  cursor: var(--cursor-default), auto;
+  cursor: var(--cursor-default) 14 5, auto;
 }
 
 a,
@@ -138,6 +161,7 @@ button,
 [role="button"],
 input[type="submit"],
 input[type="button"],
+input[type="checkbox"],
 label,
 select,
 .post-content img,
