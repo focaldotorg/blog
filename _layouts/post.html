@@ -29,6 +29,8 @@ layout: default
 
   <div class="post-wrapper">
     <nav class="toc">
+      <div class="toc-line"></div>
+      <div class="toc-progress" id="toc-progress"></div>
       <ul id="toc-list"></ul>
     </nav>
     <div class="post-content e-content" itemprop="articleBody">
@@ -114,6 +116,7 @@ layout: default
       if (window.innerWidth > 1024) {
         const headings = document.querySelectorAll('.post-content h2, .post-content h3');
         const tocList = document.getElementById('toc-list');
+        const tocProgress = document.getElementById('toc-progress');
         const postContent = document.querySelector('.post-content');
         const postTop = postContent.offsetTop;
         const toc = document.querySelector('.toc');
@@ -126,12 +129,15 @@ layout: default
         headings.forEach(heading => {
           const li = document.createElement('li');
           const a = document.createElement('a');
+          const tick = document.createElement('span');
+          tick.className = 'toc-tick';
           a.href = `#${heading.id}`;
           a.textContent = heading.textContent;
           if (heading.tagName === 'H3') li.classList.add('sub');
           const relativePos = (heading.offsetTop - postTop) / postHeight * 100;
           li.style.position = 'absolute';
           li.style.top = `${Math.max(0, relativePos)}%`;
+          li.appendChild(tick);
           li.appendChild(a);
           tocList.appendChild(li);
         });
@@ -141,7 +147,7 @@ layout: default
         function updateActiveHeading() {
           let activeHeading = null;
           headings.forEach(heading => {
-            if (heading.getBoundingClientRect().top < 600) {
+            if (heading.getBoundingClientRect().top < 300) {
               activeHeading = heading;
             }
           });
@@ -163,9 +169,29 @@ layout: default
           }
         }
 
-        window.addEventListener('scroll', updateActiveHeading);
-          updateActiveHeading();
+        function updateProgress() {
+          const scrollY = window.scrollY || window.pageYOffset;
+          const postTopAbs = postContent.getBoundingClientRect().top + scrollY;
+          const raw = (scrollY + 300 - postTopAbs) / postHeight;
+          const percent = Math.min(1, Math.max(0, raw));
+          tocProgress.style.transform = `translate(-50%, ${percent * postHeight}px) translateY(-50%)`;
         }
+
+        let ticking = false;
+        function onScroll() {
+          if (!ticking) {
+            window.requestAnimationFrame(() => {
+              updateActiveHeading();
+              updateProgress();
+              ticking = false;
+            });
+            ticking = true;
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
     });
   </script>
 </article>

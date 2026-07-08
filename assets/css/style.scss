@@ -428,22 +428,14 @@ figcaption {
   width: 360px;
   font-family: 'Wermut', serif;
   font-size: 0.925em;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: visible;
 }
 
 .toc ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.toc ul::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  border-left: 3px solid var(--color-peripheral);
 }
 
 .toc li {
@@ -479,24 +471,6 @@ figcaption {
 }
 
 .toc a.active {
-  color: var(--color-primary);
-}
-
-.toc li::before {
-  content: '❙';
-  position: absolute;
-  left: 0;
-  background: none;
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  transform: none;
-  top: 4px;
-  margin-left: -1.5px;
-  color: var(--color-peripheral);
-}
-
-.toc li.active::before {
   color: var(--color-primary);
 }
 
@@ -671,6 +645,10 @@ figcaption {
   padding: 0;
 }
 
+.modal__content {
+  font-family: 'Signifier';
+}
+
 .modal__close::before {
   content: '×';
   font-size: 2rem;
@@ -680,7 +658,6 @@ figcaption {
 .modal__desc {
   font-size: 1.2rem;
   color: var(--color-primary);
-  font-family: 'Signifier';
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
@@ -696,7 +673,7 @@ figcaption {
   outline: none;
   padding: 0.65rem 0.85rem;
   font-size: 0.9rem;
-  font-family: inherit;
+  font-family: monospace;
   background: var(--color-secondary);
   color: var(--color-basis);
 }
@@ -713,7 +690,7 @@ figcaption {
   padding: 0.65rem 1.1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: inherit;
+  font-family: monospace;
 }
 
 #ml-submit:hover {
@@ -736,12 +713,35 @@ figcaption {
   color: var(--color-highlight);
 }
 
-@media (max-width: 1500px) {
-  
-  .toc li::before {
-    margin-left: -6.5px;
-  }
+.toc-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--color-peripheral);
+}
 
+.toc-progress {
+  position: absolute;
+  left: 1px; /* horizontal center of the 3px .toc-line */
+  top: 0;
+  width: 8px;
+  height: 14px;
+  background-color: var(--color-primary);
+  transform: translate(-50%, 0px);
+  will-change: transform;
+  transition: transform 0.08s linear;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.toc-tick {
+  position: absolute;
+}
+
+.toc li.active .toc-tick {
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 1024px) {
