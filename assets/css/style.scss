@@ -645,6 +645,10 @@ figcaption {
   padding: 0;
 }
 
+.modal__content {
+  font-family: 'Signifier';
+}
+
 .modal__close::before {
   content: '×';
   font-size: 2rem;
@@ -654,7 +658,6 @@ figcaption {
 .modal__desc {
   font-size: 1.2rem;
   color: var(--color-primary);
-  font-family: 'Signifier' !important;
   margin-bottom: 1.5rem;
   line-height: 1.3;
 }
