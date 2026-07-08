@@ -673,7 +673,7 @@ figcaption {
   outline: none;
   padding: 0.65rem 0.85rem;
   font-size: 0.9rem;
-  font-family: inherit;
+  font-family: monospace;
   background: var(--color-secondary);
   color: var(--color-basis);
 }
@@ -690,7 +690,7 @@ figcaption {
   padding: 0.65rem 1.1rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  font-family: inherit;
+  font-family: monospace;
 }
 
 #ml-submit:hover {
