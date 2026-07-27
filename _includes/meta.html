@@ -1,3 +1,17 @@
 {% if page.keywords %}
   <meta name="keywords" content="{{ page.keywords }}" />
 {% endif %}
+
+
+{% if page.abstract %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var abstract = {{ page.abstract | jsonify }};
+    var descTag = document.querySelector('meta[name="description"]');
+    if (descTag) descTag.setAttribute('content', abstract);
+    var ogDescTag = document.querySelector('meta[property="og:description"]');
+    if (ogDescTag) ogDescTag.setAttribute('content', abstract);
+  });
+</script>
+{% endif %}
+
