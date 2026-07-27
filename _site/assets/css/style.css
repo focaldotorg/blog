@@ -857,6 +857,10 @@ a::selection {
   background-color: var(--color-highlight);
 }
 
+img::selection {
+  background-color: color-mix(in srgb, var(--color-highlight) 50%, transparent);
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
