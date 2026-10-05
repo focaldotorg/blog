@@ -10,7 +10,7 @@ permalink: /about/
   }
 </style>
 
-This is the commentary interface of [focal](https://focal.org), a research collective focused on contributing knowledge to the public domain.
-
 <img class="lilies">
+
+ [focal research collective](https://focal.org)  
 
