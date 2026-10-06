@@ -21,7 +21,6 @@ Take the Kula ring[^1] of the Trobriand islands as example, a ceremonial exchang
 The system only functions because participants trust that gifts given today will be reciprocated months or years hence. What the Kula ring demonstrates is that loyalty and trust are not instantaneous but accumulated gradually overtime. A trading partner who has participated faithfully for decades carries far more social capital than one that hasn't. The system inherently recognises that time, weight and history matter and yet many would argue trust cannot be formally modelled.
 
 ## Modelling trust
-
 If we are to identify a construction of what mirrors trust ($T$), we must first define loyalty ($L$) the foundation upon which trust is built. Loyalty is determined by three variables: magnitude ($M$) the positive or negative social impact an interaction has on a recipient, interactions ($n$) the total number of trust-affecting events since acquaintance, and time ($t$) how far into the relationship an interaction occurred, expressed as a proportion of the total duration.
 
 $$
@@ -114,15 +113,13 @@ Which leads us to define **voting power ($V_P$)**  of any stakeholder as:
 
 $$V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}$$
 
-All with the inheritance of Sybil resistance, as observed under the Splitting strategy, an adversary that attempts to game the system undertakes immense opportunity cost so much so that if it fails they are left with **a 50% loss in aggregated voting power** in comparison to the Singleton strategy. 
-
 ## Open organisations
 
 Through this journey of establishing a new form of collaborative decision-making, the reality of its integration appeared stark given that traditional corporate governance treats shareholder distributions as confidential material. To the extent that to develop tooling to allow traditional organisations to experiment with what has been proposed here, would require collaboration with multiple service providers and the bureaucracy that comes with it.
 
 Hence the decision to develop the infrastructure to enable this work on [Ethereum](https://ethereum.org), which gives agency for anyone to bootstrap an organisation without any restrictions and with little overhead. We analysed the state of current governance frameworks and standards on the network to immediately observe inefficiencies. Albeit to provide a seamless integration path to new and existing organisations, the name [Governor Delta](https://github.com/focaldotorg/governor-delta) was selected to act as a true successor to the Bravo implementation that many organisations operate under today.
 
-Expect further commentary and publications, support us at [ops@focal.org]()
+Expect further commentary and publications.
 
 [^1]: Malinowski, *Argonauts of the Western Pacific* (1922)
 [^2]: Berger, D.J., Solomon, S.D. & Benjamin, A., *Tenure Voting and the U.S. Public Company*, The Business Lawyer, Vol. 72, No. 2 (2017)
