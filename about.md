@@ -10,7 +10,7 @@ permalink: /about/
   }
 </style>
 
-<img class="lilies">
+<img class="cupan-tae">
 
  [focal research collective](https://focal.org)  
 

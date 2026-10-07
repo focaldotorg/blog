@@ -857,8 +857,12 @@ a::selection {
   background-color: var(--color-highlight);
 }
 
-img::selection {
+.post-content img::selection {
   background-color: color-mix(in srgb, var(--color-highlight) 50%, transparent);
+}
+
+.post-content .cupan-tae {
+  cursor: var(--cursor-default) 14 5, auto;
 }
 
 input:-webkit-autofill,
@@ -910,7 +914,7 @@ select,
   cursor: var(--cursor-pointer), pointer;
 }
 
-.lilies {
+.cupan-tae {
   content: var(--site-lilies);
 }
 
@@ -1301,11 +1305,11 @@ figcaption {
   opacity: 1;
 }
 
-.post-content img {
+.post-content img:not(.cupan-tae) {
   transition: opacity 0.15s;
 }
 
-.post-content img:hover {
+.post-content img:not(.cupan-tae):hover {
   opacity: 0.8;
 }
 
