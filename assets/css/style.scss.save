@@ -1,4 +1,4 @@
----
+æ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
@@ -272,7 +272,6 @@ h6 {
 .p-author {
   font-weight: 400;
   color: var(--color-primary);
-  font-family: 'Signifier';
 }
 
 .post-header {
@@ -362,7 +361,6 @@ h6 {
 
 .post-meta {
   font-size: 19px;
-  font-family: "Signifier";
 }
 
 .post-list li:hover {
@@ -436,7 +434,7 @@ figcaption {
   left: calc(10% - 180px);
   height: 100%;
   width: 360px;
-  font-family: 'Signifier';
+  font-family: 'Wermut', serif;
   font-size: 0.925em;
   overflow-y: hidden;
   overflow-x: visible;
