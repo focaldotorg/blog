@@ -954,7 +954,7 @@ sup {
 }
 
 .page-content {
-  font-family: "Signifier", serif;
+  font-family: serif;
   line-height: 1.3;
   font-size: 20px;
   overflow-x: hidden;
@@ -1009,6 +1009,7 @@ h6 {
 .p-author {
   font-weight: 400;
   color: var(--color-primary);
+  font-family: "Signifier";
 }
 
 .post-header {
@@ -1098,6 +1099,7 @@ h6 {
 
 .post-meta {
   font-size: 19px;
+  font-family: "Signifier";
 }
 
 .post-list li:hover {
@@ -1171,8 +1173,8 @@ figcaption {
   left: calc(10% - 180px);
   height: 100%;
   width: 360px;
-  font-family: "Wermut", serif;
-  font-size: 0.925em;
+  font-family: "Signifier";
+  font-size: 0.95em;
   overflow-y: hidden;
   overflow-x: visible;
 }
