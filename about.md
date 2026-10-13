@@ -7,6 +7,7 @@ permalink: /about/
 <style>
   .post-title {
     text-transform: capitalize;
+    color: var(--color-basis);
   }
 </style>
 
