@@ -284,6 +284,10 @@ h6 {
   display: none;
 }
 
+.post-signoff { 
+  display: none;
+}
+
 .site-header {
   margin-top: 10px;
   border-top: none;
@@ -779,6 +783,10 @@ figcaption {
 }
 
 @media (max-width: 624px) {
+
+  .post-signoff {
+    display: contents;
+  }
 
   mjx-math {
     line-height: 0.4em !important;
