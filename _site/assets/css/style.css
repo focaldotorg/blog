@@ -1021,6 +1021,10 @@ h6 {
   display: none;
 }
 
+.post-signoff {
+  display: none;
+}
+
 .site-header {
   margin-top: 10px;
   border-top: none;
@@ -1482,10 +1486,15 @@ figcaption {
 
 .toc-tick {
   position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 5px;
+  height: 14px;
+  background-color: var(--color-peripheral);
 }
 
 .toc li.active .toc-tick {
-  background-color: var(--color-primary);
+  background-color: var(--color-basis);
 }
 
 @media (max-width: 1024px) {
@@ -1506,6 +1515,9 @@ figcaption {
   }
 }
 @media (max-width: 624px) {
+  .post-signoff {
+    display: contents;
+  }
   mjx-math {
     line-height: 0.4em !important;
   }
