@@ -753,10 +753,15 @@ figcaption {
 
 .toc-tick {
   position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 5px;
+  height: 14px;
+  background-color: var(--color-peripheral);
 }
 
 .toc li.active .toc-tick {
-  background-color: var(--color-primary);
+  background-color: var(--color-basis);
 }
 
 @media (max-width: 1024px) {
