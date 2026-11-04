@@ -69,9 +69,9 @@ In what is now clearly a pivotal point when it comes to game theory and politics
 
 ![New York Times 1991 Nassau County Board Lawsuit](assets/img/posts/i/nyt-1991-nassau-county.jpg "New York Times 1991 Nassau County Board Lawsuit")
 
-Instead of accusations, used cold cut mathematics through devising the Banzhaf power index[^5] to prove the disparity in representation of member townships due to weighted vote scoring. This followed by perusing legal action against the board, which in 1991 was successful enacting remodeling of the county's governance to a more democratic and egalitarian one-member one-vote model. Additionally John acted as amicus curiae for Iannucci v. Board of Supervisors (1967), where the power index was referenced further.
+Instead of accusations, John used cold cut mathematics through devising the Banzhaf power index[^5] to prove the disparity in representation of member townships due to weighted vote scoring. This followed by perusing legal action against the board, which in 1991 was successful enacting remodeling of the county's governance to a more democratic and egalitarian one-member one-vote model. Additionally acting as amicus curiae for Iannucci v. Board of Supervisors (1967), where the power index was referenced further.
 
-Fast forward to the 21st century and the voting theory rebloom, widely unacknowledged that the flowers of which take inspiration from Penrose's square root law. Yet more commonly acclaimed  being derived from early mechanism design point-purchase systems and optimal voting rules[^6].  Quadratic Voting proposed by [Weyl](https://en.wikipedia.org/wiki/Glen_Weyl) and [Posner](https://en.wikipedia.org/wiki/Eric_Posner) in 2017, uses the square-root function to replicate a "quadratic" cost in multiple choice voting ballots. It's only flaw is the need for Sybil protection, as it ultimately fails from the exponential advantage from what is called a splitting attack[^7]. Much is the reason why it has failed to be integral to capital markets but did find suite with Taiwan's digital ministry. With pilots for state budgets by preferential vote[^8] further validating the benefits of the square root method.
+Fast forward to the 21st century and the voting theory rebloom, widely unacknowledged that the flowers of which take inspiration from Penrose's square root law. Yet more commonly acclaimed being derived from early mechanism design point-purchase systems and optimal voting rules[^6].  Quadratic Voting proposed by [Weyl](https://en.wikipedia.org/wiki/Glen_Weyl) and [Posner](https://en.wikipedia.org/wiki/Eric_Posner) in 2017, uses the square-root function to replicate a "quadratic" cost in multiple choice voting ballots. It's only flaw is the need for Sybil protection, as it ultimately fails from the exponential advantage from what is called a splitting attack[^7]. Much is the reason why it has failed to be integral to capital markets but did find suite with Taiwan's digital ministry. With pilots for state budgets by preferential vote[^8] further validating the benefits of the square root method.
 
 ## Polycentrism 
 
@@ -81,13 +81,11 @@ Plutocracy's intent was always to be polycentric but often falls ill to the stri
 
 ## Something new 
 
-What if time itself was the balance to a composite weighting system, one that penalises short-termism and amplifies tenure. Exactly the basis behind a new voting model for capital markets we designed named [Polycentric Voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546438). Where time and commitment are introduced as axes in authority past capital (stake). Within this we define **effective time ($t_{\text{effective}}$)**; a capital-weighted time metric, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+What if time itself was the balance to a composite weighting system, one that penalises short-termism and amplifies tenure. Exactly the basis behind a new voting model for capital markets we designed named [Polycentric Voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546438). Where time and commitment are introduced as axes in authority past capital contribution, a system that that factors for tenure. Here we formalise **effective time ($t_{\text{effective}}$)**; a stake-time integral, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
 
 $$
 t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}
 $$
-
-Additionally a new metric in modelling **tenure**, by formalising path-dependency as the variance of an actors time weight we get a distinctive map of the trajectory of their commitment, with tenure being the slope of that curvature. Providing a distinctive profile of stakeholders behaviour regardless of stake.
 
 Lets define four strategies for analysis, Singleton, Splitting, Dynamic and Sequential - each with a final share amount of 10,000 and varied inventory schedules:
 
@@ -103,9 +101,9 @@ Seeking to adopt tenure in the modelling of voting power, we propose a novel wei
   <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark">
 </picture>
 
-Which leads us to define **voting power ($V_P$)**  of any stakeholder as:
+Where $S$ represents stake and $W$ equals to the time-weight leads us to define **voting power ($V_P$)** of any stakeholder as:  
 
-$$V_P = W(\alpha \cdot T + \sqrt{T}(1-\alpha)) \tag{4}$$
+$$V_P = W(\alpha \cdot S + \sqrt{S}(1-\alpha)) \tag{4}$$
 
 ## Open organisations
 

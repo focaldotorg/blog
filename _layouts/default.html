@@ -3,12 +3,15 @@
   {%- include head.html -%}
   <script>
     (function() {
+      const LIGHT_HOURS = { winterSpring: [7, 17], summerFall: [10, 21] };
+      const getPeriod = (month) => month >= 3 && month <= 8 ? 'summerFall' : 'winterSpring';
       const updateTheme = () => {
-        const hour = new Date().getHours();
-        const isDarkTime = hour >= 20 || hour < 10;
-        const theme = isDarkTime ? 'dark' : 'light';
+        const now = new Date();
+        const [start, end] = LIGHT_HOURS[getPeriod(now.getMonth())];
+        const hour = now.getHours();
+        const isLight = hour >= start && hour < end;
 
-        document.documentElement.setAttribute('data-theme', theme);
+        document.documentElement.setAttribute('data-theme', isLight ? 'light' : 'dark');
       };
 
       updateTheme();
