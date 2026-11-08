@@ -59,7 +59,7 @@ The defects trickle down even to aspects such as remuneration. When the public m
 
 *Therefore, how could we factor for loyalty in a capital-weighted system?*
 
-Prior attempts in this domain simply model time-weighting largely as a stepped function for enhanced voting rights[^2], [loyalty shares](https://fr.wikipedia.org/wiki/Une_action,_une_voix#France) treat individual transfers as isolated lots that also make the measurement of influence difficult. Furthermore often lacks progressive representation, default implementations quoting a 2 year timespan as tenure, with it carrying double voting influence. Which can disenfranchise common ownership, analysis on NYSE data found the average market share holding time only reaching 5.5 months as reported June 2020[^3].
+Prior attempts in this domain simply model time-weighting largely as a stepped function for enhanced voting rights[^2], [loyalty shares](https://fr.wikipedia.org/wiki/Une_action,_une_voix#France) treat individual transfers as isolated lots that also make the measurement of influence difficult. Furthermore often lacks progressive representation, default implementations quoting a 2 year timespan as tenure, with it carrying double voting influence. Which can disenfranchise common ownership, analysis on NYSE data found the average market share holding time only reaching 5.5 months as of June 2020[^3].
 
 Like human relationships, shareholders should be given a degree of authority from simply being present and allocating their stake towards a dedicated function, as they already do through idle inventory. Although it can troublesome to treat public markets and stakeholder constituencies as equals. The latter being when shares or votes are committed towards the organisation's function, the former for provisioning shares for an economic incentive. One of the major defects of plutocracy is the ambiguity of voting power due to the accessibility and continuous nature of market liquidity.
 
@@ -107,13 +107,13 @@ $$V_P = W(\alpha \cdot S + \sqrt{S}(1-\alpha)) \tag{4}$$
   <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark">
 </picture>
 
-When plotted we can see disparities between the strategies, first how Singleton and Splitting have almost equivalent voting power, ruling that splitting attacks are largely self-defeating with additional operational cost. While there is minor advantages in voting power under the Splitting strategy, it is temporary and fully dissipates at convergence. Sequential converging soon after as it only concerns deposits, Dynamic posing as suboptimal from greater dilution and thus duration to convergence due to rebalancing. 
+When plotted we can see disparities between the strategies, first how Singleton and Splitting have almost equivalent voting power, ruling that splitting attacks are largely self-defeating carrying additional operational cost. While there is minor advantages in voting power under the Splitting strategy, it is temporary and fully dissipates at convergence. Sequential converging soon after as it only concerns deposits, Dynamic posing as suboptimal from greater dilution and thus duration to convergence due to rebalancing. 
 
 Finally, under analysis using the Banzhaf power index, we discovered influence follows a dynamic order under this voting model in contrast to static order of traditional shareholder voting.
 
 ## Open organisations
 
-Through the process of establishing a new answer to collaborative decision-making, the reality of its integration appeared stark given that traditional corporate governance treats shareholder distributions as confidential material. To the extent that to develop tooling to allow traditional organisations to experiment with what has been proposed here, would require collaboration with multiple service providers and the bureaucracy that comes with it.
+Through the process of creating a new form collaborative decision-making, its integration appeared stark given that traditional corporate governance treats shareholder distributions as confidential material. To the extent that to develop tooling to allow traditional organisations to experiment with what has been proposed here, would require collaboration with multiple service providers and the bureaucracy that comes with it.
 
 Hence for now,  we developed infrastructure to enable this work on [Ethereum](https://ethereum.org), giving agency for anyone to bootstrap an organisation without any restrictions and with little overhead. We analysed the state of current governance frameworks and standards on the network to immediately observe boundaries. Albeit to provide a seamless integration path to new and existing organisations, we present [Governor Delta](https://github.com/focaldotorg/governor-delta) as a true successor to the Bravo implementation that many organisations operate under today.
 
