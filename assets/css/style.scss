@@ -133,6 +133,10 @@ a::selection {
   cursor: var(--cursor-default) 14 5, auto;
 }
 
+.post i, .post em {
+  font-family: serif !important;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
