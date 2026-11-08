@@ -69,37 +69,42 @@
 
 @font-face {
   font-family: 'Wermut';
-  src: url('./fonts/wermut-regular.otf') format('opentype');
+  src: url('../fonts/wermut-regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Wermut';
-  src: url('./fonts/wermut-italic.otf') format('opentype');
+  src: url('../fonts/wermut-italic.otf') format('opentype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Signifier';
-  src: url('./artifacts/fonts/signifier-regular.woff2') format('woff2');
+  src: url('../fonts/signifier-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Signifier';
-  src: url('./artifacts/fonts/signifier-regular-italic.woff2') format('woff2');
+  src: url('../fonts/signifier-regular-italic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Signifier';
-  src: url('./artifacts/fonts/signifier-bold.woff2') format('woff2');
+  src: url('../fonts/signifier-bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
+}
+
+i, em {
+  font-family: 'Signifier', serif;
+  font-style: italic;
 }
 
 a,
@@ -126,6 +131,10 @@ a::selection {
 
 .post-content .cupan-tae {
   cursor: var(--cursor-default) 14 5, auto;
+}
+
+.post i, .post em {
+  font-family: serif !important;
 }
 
 input:-webkit-autofill,
@@ -281,6 +290,10 @@ h6 {
 }
 
 .post-image {
+  display: none;
+}
+
+.post-signoff { 
   display: none;
 }
 
@@ -749,10 +762,15 @@ figcaption {
 
 .toc-tick {
   position: absolute;
+  top: 9px;
+  left: 1px;
+  width: 5px;
+  height: 14px;
+  background-color: var(--color-peripheral);
 }
 
 .toc li.active .toc-tick {
-  background-color: var(--color-primary);
+  background-color: var(--color-basis);
 }
 
 @media (max-width: 1024px) {
@@ -779,6 +797,10 @@ figcaption {
 }
 
 @media (max-width: 624px) {
+
+  .post-signoff {
+    display: contents;
+  }
 
   mjx-math {
     line-height: 0.4em !important;

@@ -30,7 +30,7 @@ no_description: true
             <h2> {{ post.title | escape }} </h2>
             <p>
               <span class="post-meta">{{ post.date | date: date_format }}</span>
-              <span class="post-description">&nbsp;&nbsp;{{ post.description }} </span>
+              <span class="post-description">&nbsp;&nbsp;{{ post.abstract }} </span>
             </p>
             <img class="post-image" src="{{ post.image }}" />
           </div>
