@@ -6,7 +6,7 @@ permalink: the-mathematics-of-loyalty
 image: /assets/img/posts/i/kula-ring-map.jpg
 keywords: "insitutional governance, plutocracy, polycentrism, polycentric voting, polycentricity, kula ring, gift economies, power indices, game theory"
 abstract: "Reciprocity, capital markets and governance"
-description: "A brief history on weighted voting, capital markets, corperate goverance and a proposal for something new."
+description: "A brief history on weighted voting, capital markets, corporate goverance and a proposal for something new."
 date: "06/10/2026"
 ---
 
@@ -53,9 +53,9 @@ Showcasing the small but substantial increase in trust, given that over the cour
 
 ## Corporate governance
 
-When shareholders vote on company decisions, they are exercising power over an entity built through years of collective effort, customer relationships, and operational history. Yet our current system treats all votes identical regardless of whether acquired yesterday or held for decades. A hedge fund that purchased shares last week has the same voting power per share as a pension fund that has held for twenty years - despite having radically different exposure profiles to their financial decisions. This is the mathematical flaw at the heart of plutocracy - it ignores time. 
+When shareholders vote on company decisions, they are exercising power over an entity built through years of collective effort, customer relationships, and operational history. Yet our current system treats all votes identical regardless of whether acquired yesterday or held for decades. A hedge fund that purchased shares last week has the same voting power per share as a pension fund that has held for twenty years despite having radically different exposure profiles to their financial decisions. This is the mathematical flaw at the heart of plutocracy, it ignores time. 
 
-The defects trickle down even to aspects such as remuneration. When the public market's interests are prioritised rarely is it reflective of the past but generally the future quarterly and annual earnings reports. A scenario that played out at General Electric (GE) back in 2010, where since 1987 their pension program was entirely funded by employees and contributed billions to their bottom line margin. CEO Jeffrey Immelt claimed it was a "drag" to the company's fiscal operations, a comment that followed ending the defined benefit plan for employees in 2012, instead replaced with 401k compensation. GE then continued to spend up to 40 billion dollars up until 2020 on stock buybacks in an attempt to increase their financials to be attractive to the general market, all while company executives received increased pay and stock. By 2018 pensions were underfunded by a factor of 22.3 billion dollars, **the largest deficit in history of the S&P 500**.  Whether you served for over three decades at the company is not relevant. Whether you have managed your life around these promised incentives is not relevant. Whether you were allocated shares and held is not relevant - only the short sighted preference of the public market is.
+The defects trickle down even to aspects such as remuneration. When the public market's interests are prioritised rarely is it reflective of the past but generally the future quarterly and annual earnings reports. A scenario that played out at General Electric (GE) back in 2010, where since 1987 their pension program was entirely funded by employees and contributed billions to their bottom line margin. CEO Jeffrey Immelt claimed it was a "drag" to the company's fiscal operations, a comment that followed ending the defined benefit plan for employees in 2012, instead replaced with 401k compensation. GE then continued to spend up to 40 billion dollars up until 2020 on stock buybacks in an attempt to increase their financials to be attractive to the general market. All while company executives received increased pay and stock, by 2018 pensions were underfunded by a factor of 22.3 billion dollars **the largest deficit in history of the S&P 500**.  Whether you served for over three decades at the company is not relevant. Whether you have managed your life around these promised incentives is not relevant. Whether you were allocated shares and held is not relevant - only the short sighted preference of the public market is.
 
 *Therefore, how could we factor for loyalty in a capital-weighted system?*
 
@@ -83,7 +83,7 @@ Plutocracy's intent was always to be polycentric but largely fails due to the il
 
 ## Something new 
 
-What if time itself was the balance to a composite weighting system, one that penalises short-termism and amplifies tenure. Exactly the basis behind a new voting model for capital markets we designed named [Polycentric Voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546438). Where time and commitment are introduced as axes in authority past capital contribution, a system that that factors for tenure. Here we formalise **effective time ($t_{\text{effective}}$)**; a stake-time integral, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
+What if time itself was the balance to a composite weighting system, one that penalises short-termism and amplifies tenure. Exactly the basis behind a new voting model for capital markets we designed named [Polycentric Voting](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7546438). Where time and commitment are introduced as axes in authority past capital contribution. Here we formalise **effective time ($t_{\text{effective}}$)**; a stake-time integral, resulting in dynamics where the time weight is rebalanced on subsequent deposits and preserved on reductions. 
 
 $$
 t_{\text{effective}} = \frac{\sum a_i \cdot t_d}{\sum a_i} \tag{3}
@@ -107,7 +107,7 @@ $$V_P = W(\alpha \cdot S + \sqrt{S}(1-\alpha)) \tag{4}$$
   <img src="assets/img/posts/i/pv_strategies_light.svg" title="Strategy benchmark">
 </picture>
 
-When plotted we can see disparities between the strategies, first how Singleton and Splitting have almost equivalent voting power, ruling that splitting attacks are largely self-defeating carrying additional operational cost. While there is minor advantages in voting power under the Splitting strategy, it is temporary and fully dissipates at convergence. Sequential converging soon after as it only concerns deposits, Dynamic posing as suboptimal from greater dilution and thus duration to convergence due to rebalancing. 
+When plotted we can see disparities between the strategies, first how Singleton and Splitting have almost equivalent voting power, ruling that splitting attacks are largely self-defeating given the additional operational cost. While there is minor advantages in voting power under the Splitting strategy, it is temporary and fully dissipates at convergence. Sequential converging soon after as it only concerns deposits, Dynamic posing as suboptimal from greater dilution and thus duration to convergence due to rebalancing. 
 
 Finally, under analysis using the Banzhaf power index, we discovered influence follows a dynamic order under this voting model in contrast to static order of traditional shareholder voting.
 
