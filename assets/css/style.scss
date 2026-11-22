@@ -302,16 +302,18 @@ h6 {
 }
 
 .post-list {
-  height: 70vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;   // stack items vertically
+  justify-content: center;  // now centres vertically (main axis = column)
+  align-items: center;      // centres horizontally (cross axis)
+  min-height: 70vh;         // min-height, not height (see below)
 }
 
 .post-list li {
   border: solid 3px var(--color-peripheral);
   border-radius: 0px;
   background: var(--color-basis);
+  width: 80%;
   z-index: 3;
   padding: 30px 30px;
   position: relative;
