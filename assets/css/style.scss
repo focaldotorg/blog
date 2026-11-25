@@ -715,7 +715,7 @@ figcaption {
 
 .toc-progress {
   position: absolute;
-  left: 1px; /* horizontal center of the 3px .toc-line */
+  left: 1px; 
   top: 0;
   width: 8px;
   height: 14px;
@@ -764,6 +764,10 @@ figcaption {
 }
 
 @media (max-width: 624px) {
+
+  .post-meta {
+    font-size: 21px;
+  }
 
   .post-signoff {
     display: contents;
